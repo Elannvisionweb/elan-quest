@@ -9,65 +9,82 @@ interface NavbarProps {
 
 export default function Navbar({ onRegisterClick }: NavbarProps) {
   return (
-    <header className="w-full bg-[#B2D5FF] px-6 py-3 md:px-12 flex items-center justify-between shadow-sm relative z-50">
-      {/* Logos Left */}
-      <div className="flex items-center gap-4">
+    <header className="w-full bg-[#B2D5FF] px-2 py-3 md:px-12 flex items-center justify-between shadow-sm relative z-50">
+      <div className="flex items-center gap-2">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/pics/navbar.png"
-            alt="Elan & nVision logo"
+            alt="Elan and nVision logo"
             width={150}
             height={150}
             className="object-contain"
           />
         </Link>
 
-        {/* External institution / fest links */}
         <div className="hidden lg:flex items-center gap-4 pl-2 border-l border-[#0F2851]/20">
           <a
             href="https://www.iith.ac.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0F2851] text-xs font-semibold tracking-wide hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-opacity"
           >
-            IIT HYDERABAD
+            <Image
+              src="/pics/iith-logo.png"
+              alt="IIT Hyderabad"
+              width={90}
+              height={30}
+              className="object-contain"
+            />
           </a>
+
           <a
             href="https://elan.org.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0F2851] text-xs font-semibold tracking-wide hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-opacity"
           >
-            ELAN &amp; NVISION
+            <Image
+              src="/pics/elan-logo.png"
+              alt="Elan and nVision logo"
+              width={110}
+              height={30}
+              className="object-contain"
+            />
           </a>
         </div>
       </div>
 
-      {/* Navigation Links Right */}
-      <nav className="flex items-center gap-6 md:gap-10">
+      <nav className="flex items-center gap-3 md:gap-10">
         <Link
           href="/exam-details"
-          className="text-[#0F2851] font-extrabold text-xs md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+          className="text-[#0F2851] font-extrabold text-[10px] md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
         >
           EXAM DETAILS
         </Link>
 
         <Link
+          href="/syllabus"
+          className="text-[#0F2851] font-extrabold text-[10px] md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+        >
+          SYLLABUS
+        </Link>
+
+        <Link
           href="/results"
-          className="text-[#0F2851] font-extrabold text-xs md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+          className="text-[#0F2851] font-extrabold text-[10px] md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
         >
           RESULTS
         </Link>
 
         <Link
           href="/about"
-          className="text-[#0F2851] font-extrabold text-xs md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+          className="text-[#0F2851] font-extrabold text-[10px] md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
         >
           ABOUT
         </Link>
 
         <Link
-          href="/contact-us"
+          href="/contact"
           className="text-[#0F2851] font-extrabold text-xs md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
         >
           CONTACT US
@@ -75,7 +92,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
 
         <button
           onClick={onRegisterClick}
-          className="bg-[#FF7A7A] hover:bg-[#ff6565] text-white font-black text-xs md:text-sm px-5 py-2.5 rounded-full uppercase tracking-wider transition-all transform hover:scale-105 active:scale-95 shadow-sm cursor-pointer"
+          className="bg-[#FF7A7A] hover:bg-[#ff6565] text-white font-black text-xs md:text-sm px-3 py-2.5 rounded-full uppercase tracking-wider transition-all transform hover:scale-105 active:scale-95 shadow-sm cursor-pointer"
         >
           REGISTER NOW
         </button>
