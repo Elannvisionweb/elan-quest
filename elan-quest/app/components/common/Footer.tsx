@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="flex items-center gap-6 md:gap-8">
         <Image
           src="/pics/footer.png"
-          alt="Elan & nVision logo"
+          alt="Elan and nVision logo"
           width={200}
           height={200}
           className="object-contain py-3.5"
@@ -25,21 +25,35 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="hover:opacity-70 transition-opacity"
         >
-          IIT HYDERABAD
+          <Image
+            src="/pics/iith-logo.png"
+            alt="IIT Hyderabad"
+            width={90}
+            height={30}
+            className="object-contain"
+          />
         </a>
+
         <a
           href="https://elan.org.in/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-70 transition-opacity"
         >
-          ELAN &amp; NVISION
+          <Image
+            src="/pics/elan-logo.png"
+            alt="Elan and nVision logo"
+            width={110}
+            height={30}
+            className="object-contain"
+          />
         </a>
+
         <Link
           href="/terms-conditions"
           className="hover:opacity-70 transition-opacity"
         >
-          TERMS &amp; CONDITIONS
+          TERMS AND CONDITIONS
         </Link>
       </div>
     </footer>
