@@ -18,8 +18,22 @@ const fadeInUp: Variants = {
 
 export default function TermsPage() {
   return (
-    <div className="body-font bg-[var(--background)] text-[var(--foreground)] pt-16 w-full overflow-x-hidden">
-      <div className="space-y-20">
+    <main className="relative min-h-0 w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851] pt-16">
+
+      {/* =========================
+          PATTERN BACKGROUND
+          ========================= */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: "url('/pics/patternfinal.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "top center",
+          backgroundRepeat: "repeat-y",
+        }}
+      />
+
+      <div className="relative z-10 space-y-20">
         {/* Header */}
         <motion.div
           initial="hidden"
@@ -301,6 +315,6 @@ export default function TermsPage() {
           <div className="h-10" />
         </motion.div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -10,27 +10,50 @@ interface NavbarProps {
 export default function Navbar({ onRegisterClick }: NavbarProps) {
   return (
     <header className="w-full bg-[#B2D5FF] px-2 py-3 md:px-12 flex items-center justify-between shadow-sm relative z-50">
-      {/* Logos Left */}
       <div className="flex items-center gap-2">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/pics/navbar.png"
-            alt="logo"
+            alt="Elan and nVision logo"
             width={150}
             height={150}
             className="object-contain"
           />
-          {/* <Image
-            src="/iith-logo.svg" 
-            alt="IIT Hyderabad Logo"
-            width={28}
-            height={28}
-            className="object-contain"
-          /> */}
         </Link>
+
+        <div className="hidden lg:flex items-center gap-4 pl-2 border-l border-[#0F2851]/20">
+          <a
+            href="https://www.iith.ac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-70 transition-opacity"
+          >
+            <Image
+              src="/pics/iith-logo.png"
+              alt="IIT Hyderabad"
+              width={90}
+              height={30}
+              className="object-contain"
+            />
+          </a>
+
+          <a
+            href="https://elan.org.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-70 transition-opacity"
+          >
+            <Image
+              src="/pics/elan-logo.png"
+              alt="Elan and nVision logo"
+              width={110}
+              height={30}
+              className="object-contain"
+            />
+          </a>
+        </div>
       </div>
 
-      {/* Navigation Links Right */}
       <nav className="flex items-center gap-3 md:gap-10">
         <Link
           href="/exam-details"
@@ -41,23 +64,30 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
 
         <Link
           href="/syllabus"
-          className="text-[#0F2851] font-extrabold text-[10px]  md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+          className="text-[#0F2851] font-extrabold text-[10px] md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
         >
           SYLLABUS
         </Link>
 
         <Link
           href="/results"
-          className="text-[#0F2851] font-extrabold text-[10px]  md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+          className="text-[#0F2851] font-extrabold text-[10px] md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
         >
           RESULTS
         </Link>
 
         <Link
           href="/about"
-          className="text-[#0F2851] font-extrabold text-[10px]  md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+          className="text-[#0F2851] font-extrabold text-[10px] md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
         >
           ABOUT
+        </Link>
+
+        <Link
+          href="/contact"
+          className="text-[#0F2851] font-extrabold text-xs md:text-sm tracking-wider uppercase hover:opacity-80 transition-opacity"
+        >
+          CONTACT US
         </Link>
 
         <button
