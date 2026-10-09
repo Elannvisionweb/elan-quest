@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 
 export default function AboutPage() {
   return (
-    <div className="relative flex h-screen w-full flex-col overflow-hidden bg-[#F0ECCF] font-sans text-[#0f2438]">
+    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] font-sans text-[#0f2438]">
       {/* ──────────────── 0. BACKGROUND PATTERN LAYER ──────────────── */}
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-100"
@@ -58,7 +58,7 @@ export default function AboutPage() {
       </header>
 
       {/* ──────────────── 2. INDEPENDENTLY SCROLLABLE CONTENT ──────────────── */}
-      <main className="relative z-10 w-full flex-1 overflow-y-auto">
+      <main className="relative z-10 w-full flex-1 md:overflow-y-auto">
         <div className="mx-auto max-w-5xl space-y-12 px-6 py-10 pb-24 md:px-12">
           {/* ABOUT NEXUS QUEST */}
           <motion.section

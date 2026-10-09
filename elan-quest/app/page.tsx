@@ -44,8 +44,6 @@ const perks = [
     <div
       className="
         relative
-        -mt-[100px]
-        md:mt-0
         min-h-screen
         w-full
         overflow-x-hidden
@@ -75,8 +73,9 @@ const perks = [
           className="
             relative
             w-full
-            min-h-[900px]
-            max-md:min-h-[700px]
+            min-h-[480px]
+            sm:min-h-[640px]
+            md:min-h-[900px]
             overflow-visible
           "
         >
@@ -93,10 +92,13 @@ const perks = [
     pointer-events-none
 
     /* MOBILE */
-    max-md:top-[120px]
-    max-md:left-[-8%]
-    max-md:w-[125%]
-    max-md:max-w-none
+    top-[90px]
+    left-[-5%]
+    w-[115%]
+    max-w-none
+    sm:top-[70px]
+    sm:left-[-3%]
+    sm:w-[108%]
 
     /* DESKTOP - UNCHANGED */
     md:top-0
@@ -122,8 +124,9 @@ const perks = [
               relative
               z-10
               mx-auto
-              min-h-[900px]
-              max-md:min-h-[700px]
+              min-h-[480px]
+              sm:min-h-[640px]
+              md:min-h-[900px]
               w-full
               max-w-[1440px]
             "
@@ -137,12 +140,13 @@ const perks = [
     absolute
     z-20
 
-    /* MOBILE — UNCHANGED */
-    max-md:left-[4%]
-    max-md:top-[45px]
-    max-md:w-[230px]
+    /* MOBILE */
+    left-[5%]
+    top-[25px]
+    w-[220px]
+    sm:w-[300px]
 
-    /* DESKTOP — RESPONSIVE */
+    /* DESKTOP — RESPONSIVE (UNCHANGED) */
     md:left-[4.5%]
     md:top-[clamp(160px,5vw,240px)]
     md:w-[clamp(430px,45vw,650px)]
@@ -179,14 +183,18 @@ const perks = [
     cursor-pointer
     whitespace-nowrap
 
-    /* MOBILE — UNCHANGED */
-    max-md:left-[23%]
-    max-md:top-[165px]
-    max-md:px-4
-    max-md:py-2
-    max-md:text-xs
+    /* MOBILE */
+    left-[5%]
+    top-[140px]
+    px-4
+    py-2
+    text-xs
+    sm:top-[190px]
+    sm:px-5
+    sm:py-2.5
+    sm:text-sm
 
-    /* DESKTOP — RESPONSIVE */
+    /* DESKTOP — RESPONSIVE (UNCHANGED) */
     md:left-[28%]
     md:top-[clamp(480px,27vw,580px)]
 md:px-[clamp(20px,2.8vw,34px)]
@@ -207,11 +215,13 @@ md:text-[clamp(18px,1.6vw,23px)]
     relative
     w-full
     px-6
-    pt-[300px]
-    pb-[60px]
+    pt-10
+    pb-[40px]
     sm:px-10
+    sm:pt-16
     md:px-[6.5%]
     md:pt-[300px]
+    md:pb-[60px]
   "
 >
   <div className="mx-auto w-full max-w-[1000px] ">

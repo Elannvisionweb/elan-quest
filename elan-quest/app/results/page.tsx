@@ -297,15 +297,15 @@ export default function ResultsPage() {
 /> 
 
       {/* Hero Header Banner */}
-      <header className="relative z-10 w-full pt-12 pb-16 px-6 md:px-16 flex items-center justify-between max-w-7xl mx-auto">
+      <header className="relative z-10 w-full pt-8 pb-10 sm:pt-12 sm:pb-16 px-5 sm:px-6 md:px-16 flex items-center justify-between max-w-7xl mx-auto">
         <div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#0F2851] uppercase">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#0F2851] uppercase">
             RESULTS
           </h1>
         </div>
 
         {/* Trophy Illustration Graphic */}
-        <div className="relative w-36 h-36 sm:w-48 sm:h-48 md:w-56 md:h-56 flex-shrink-0">
+        <div className="relative w-28 h-28 sm:w-48 sm:h-48 md:w-56 md:h-56 flex-shrink-0">
           <Image
             src="/pics/prize.png" // Ensure this image path matches your public folder
             alt="Trophy Celebration"
@@ -317,7 +317,7 @@ export default function ResultsPage() {
       </header>
 
       {/* Main Content Area */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pb-20 space-y-16">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-6 pb-20 space-y-12 sm:space-y-16">
         
         {/* Process Section */}
         <section className="space-y-4">

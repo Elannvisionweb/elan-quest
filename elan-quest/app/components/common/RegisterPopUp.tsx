@@ -24,8 +24,8 @@ export default function RegisterPopUp({ setShowPopup }: PopUpProps) {
   }, []);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center body-font bg-black/70 z-50 animate-fadeIn">
-      <div className="bg-[var(--background)] flex flex-col p-6 shadow-lg max-w-md w-fit animate-scaleIn">
+    <div className="fixed inset-0 flex items-center justify-center body-font bg-black/70 z-50 animate-fadeIn p-4">
+      <div className="bg-[var(--background)] flex flex-col p-6 shadow-lg max-w-md w-full sm:w-fit max-h-[90vh] overflow-y-auto rounded-lg sm:rounded animate-scaleIn">
         <h2 className="text-xl font-bold text-[var(--foreground)] text-center mb-4">
           Please select your class
         </h2>

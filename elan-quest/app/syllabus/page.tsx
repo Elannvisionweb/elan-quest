@@ -80,10 +80,10 @@ export default function SyllabusPage() {
           <section
           className="
             relative
-            h-[220px]
+            h-[120px]
             w-full
-            overflow-visible
-            sm:h-[280px]
+            overflow-hidden
+            sm:h-[180px]
             md:h-[515px]
           "
         >
@@ -107,53 +107,43 @@ export default function SyllabusPage() {
        SYLLABUS
           </h1>
 
-        <h1
-  className="
-    absolute
-    left-3
-    top-[65px]
-    z-10
-    block
-    font-['Nexa_Text']
-    text-[32px]
-    font-black
-    uppercase
-    leading-none
-    text-[#092B55]
-    sm:left-8
-    sm:top-[95px]
-    sm:text-[48px]
-    md:hidden
-  "
->
-  SYLLABUS
-</h1>
-<div
-  className="
-    absolute
-    right-[10px]
-    top-[15px]
-    z-10
-    block
-    h-[100px]
-    w-[110px]
-    sm:right-[20px]
-    sm:top-[20px]
-    sm:h-[130px]
-    sm:w-[140px]
-    md:hidden
-  "
->
-  <Image
-    src="/pics/book.png"
-    alt="syllabus"
-    fill
-    priority
-    className="object-contain"
-  />
-</div>
+        {/* MOBILE HERO CONTAINER */}
+        <div className="flex h-full w-full items-center justify-between md:hidden">
+          <h1
+            className="
+              font-['Nexa_Text']
+              text-[28px]
+              font-black
+              uppercase
+              leading-tight
+              text-[#092B55]
+              sm:text-[40px]
+            "
+          >
+            SYLLABUS
+          </h1>
 
-          {/* DESKTOP IMAGE */}
+          <div
+            className="
+              relative
+              h-[90px]
+              w-[95px]
+              flex-shrink-0
+              sm:h-[130px]
+              sm:w-[140px]
+            "
+          >
+            <Image
+              src="/pics/book.png"
+              alt="syllabus"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
+        </div>
+
+          {/* DESKTOP IMAGE - UNCHANGED */}
           <div
             className="
               absolute
@@ -174,9 +164,6 @@ export default function SyllabusPage() {
               className="object-contain"
             />
           </div>
-
-
-      
 
         </section>
         {/* Intro copy */}
@@ -256,24 +243,24 @@ export default function SyllabusPage() {
                     return (
                       <div
                         key={rowIdx}
-                        className="grid h-fit w-full grid-cols-[1fr_20px_1fr] items-center gap-4 px-5 py-6"
+                        className="grid h-fit w-full grid-cols-[1fr_16px_1.4fr] items-center gap-2 px-3.5 py-3.5 sm:px-5 sm:py-6"
                         style={{
                           background: `rgba(240, 236, 207, ${bgOpacity})`,
                           color: fontColor,
                         }}
                       >
                         <div
-                          className={`text-left text-lg leading-relaxed ${
+                          className={`text-left text-sm sm:text-base leading-relaxed ${
                             rowIdx === 0 ? "font-bold" : "font-medium"
                           }`}
                         >
                           {item.col1}
                         </div>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center text-xs">
                           •
                         </div>
                         <div
-                          className={`text-left text-base leading-relaxed ${
+                          className={`text-left text-xs sm:text-sm leading-relaxed ${
                             rowIdx === 0 ? "font-bold" : "font-medium"
                           }`}
                         >

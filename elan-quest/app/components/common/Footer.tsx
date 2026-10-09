@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         {/* COMMUNITY & EMAIL SECTION */}
-        <div className="flex flex-col gap-3 text-sm font-semibold tracking-wide">
+        <div className="flex flex-col items-center text-center md:items-start md:text-left gap-3 text-sm font-semibold tracking-wide">
           <div className="flex flex-col">
             <span className="uppercase text-[13px] tracking-wider">
               Join Whatsapp Community
@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
 
         {/* PHONE NUMBERS SECTION */}
-        <div className="flex items-start gap-3">
+        <div className="flex items-start justify-center md:justify-start gap-3">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#0F2851] text-white shrink-0 mt-0.5">
             <Phone className="w-3.5 h-3.5" />
           </span>
@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         {/* RIGHT SIDE: CONTACT, ADDRESS, SOCIALS & COPYRIGHT */}
-        <div className="flex flex-col items-end text-right gap-3">
+        <div className="flex flex-col items-center text-center md:items-end md:text-right gap-3">
           <h3
             className="text-2xl font-bold tracking-tight hover:opacity-80 uppercase"
           >
@@ -149,7 +149,7 @@ export default function Footer() {
           </div>
 
           {/* FOOTER LINKS / COPYRIGHT */}
-          <div className="flex items-center gap-4 text-[10px] font-medium tracking-wide">
+          <div className="flex flex-wrap justify-center md:justify-end items-center gap-4 text-[10px] font-medium tracking-wide">
             <span className="underline">Copyright © 2026 All Rights Reserved</span>
             <Link href="/terms-conditions" className="underline">
               Terms & Conditions

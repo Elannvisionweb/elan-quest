@@ -22,14 +22,17 @@ style={{
         <section
           className="
             relative
-            h-[220px]
+            h-[130px]
             w-full
             overflow-hidden
-            sm:h-[280px]
+            px-5
+            sm:h-[180px]
+            sm:px-8
             md:h-[515px]
+            md:px-0
           "
         >
-          {/* DESKTOP HEADING */}
+          {/* DESKTOP HEADING - UNCHANGED */}
           <h1
             className="
               absolute
@@ -49,30 +52,43 @@ style={{
             EXAM DETAILS
           </h1>
 
-          {/* MOBILE HEADING */}
-          <h1
-            className="
-              absolute
-              left-6
-              top-[78px]
-              z-10
-              block
-              font-['Nexa_Text']
-              text-[36px]
-              font-black
-              uppercase
-              leading-none
-              text-[#092B55]
-              sm:left-8
-              sm:top-[95px]
-              sm:text-[48px]
-              md:hidden
-            "
-          >
-            EXAM <br/> DETAILS
-          </h1>
+          {/* MOBILE HERO CONTAINER */}
+          <div className="flex h-full w-full items-center justify-between md:hidden">
+            <h1
+              className="
+                font-['Nexa_Text']
+                text-[28px]
+                font-black
+                uppercase
+                leading-tight
+                text-[#092B55]
+                sm:text-[40px]
+              "
+            >
+              EXAM DETAILS
+            </h1>
 
-          {/* DESKTOP IMAGE */}
+            <div
+              className="
+                relative
+                h-[110px]
+                w-[110px]
+                flex-shrink-0
+                sm:h-[150px]
+                sm:w-[150px]
+              "
+            >
+              <Image
+                src="/pics/exam.png"
+                alt="Exam details"
+                fill
+                priority
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* DESKTOP IMAGE - UNCHANGED */}
           <div
             className="
               absolute
@@ -93,38 +109,12 @@ style={{
               className="object-contain"
             />
           </div>
-
-          {/* MOBILE IMAGE */}
-          <div
-            className="
-              absolute
-              right-[-5px]
-              top-[35px]
-              z-10
-              block
-              h-[180px]
-              w-[175px]
-              sm:right-[15px]
-              sm:top-[45px]
-              sm:h-[230px]
-              sm:w-[220px]
-              md:hidden
-            "
-          >
-            <Image
-              src="/pics/exam.png"
-              alt="Exam details"
-              fill
-              priority
-              className="object-contain"
-            />
-          </div>
         </section>
 
         {/* =======================================================
             CONTENT
         ======================================================= */}
-     <div className="relative mx-auto min-h-[1800px] w-full max-w-[1440px]">
+     <div className="relative mx-auto min-h-0 md:min-h-[1800px] w-full max-w-[1440px]">
           {/* =====================================================
               DESKTOP TABLE
           ===================================================== */}

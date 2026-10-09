@@ -21,7 +21,7 @@ export default function MainWrapper({ children }: MainWrapperProps) {
         if (menuOpen) setMenuOpen(false);
       }}
     >
-      <main className="w-full pt-[80px] md:pt-[0px]">{children}</main>
+      <main className="w-full pt-0">{children}</main>
     </div>
   );
 }
