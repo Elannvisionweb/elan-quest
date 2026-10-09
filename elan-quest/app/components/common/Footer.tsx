@@ -87,13 +87,13 @@ export default function Footer() {
             <Phone className="w-3.5 h-3.5" />
           </span>
           <div className="grid grid-cols-[auto_auto_auto] gap-x-3 gap-y-1 text-sm font-medium tracking-wide">
-            <span>ANSIKA</span>
+             <span>ANSIKA</span>
             <span>-</span>
             <span className="font-mono">97010 38745</span>
 
-            <span>MANOGNA</span>
+             <span>MANOGNA</span>
             <span>-</span>
-            <span className="font-mono">91544 20779</span>
+            <span className="font-mono"> 91544 20779</span>
 
             <span>AASRITHA</span>
             <span>-</span>
