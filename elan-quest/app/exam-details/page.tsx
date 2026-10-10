@@ -22,15 +22,26 @@ style={{
         <section
           className="
             relative
-            h-[130px]
+            z-20
             w-full
+            h-[130px]
+            sm:h-[180px]
+            md:h-[515px]
             overflow-hidden
             px-5
-            sm:h-[180px]
             sm:px-8
-            md:h-[515px]
             md:px-0
+            bg-[#FAF6E7]
+            border-b
+            border-[#092B55]/10
+            shadow-[0_14px_28px_-6px_rgba(0,0,0,0.14),0_6px_12px_-3px_rgba(0,0,0,0.08)]
           "
+          style={{
+            backgroundImage: "url('/pics/pattern.png')",
+            backgroundSize: "auto",
+            backgroundPosition: "center top",
+            backgroundRepeat: "repeat",
+          }}
         >
           {/* DESKTOP HEADING - UNCHANGED */}
           <h1
