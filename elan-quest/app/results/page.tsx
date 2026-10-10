@@ -198,10 +198,10 @@ export default function ResultsPage() {
   ];
 
   const datesData = [
-    { label: "Registrations", value: "August 23, 2026" },
-    { label: "Registrations Close", value: "October 15, 2026" },
-    { label: "Quest Olympiad", value: "1st week of November (date TBA)" },
-    { label: "Prize Distribution", value: "January 8, 2027" },
+    { label: "Registrations", value: "September 8, 2026" },
+    { label: "Registrations Close", value: "November 22, 2026" },
+    { label: "Quest Olympiad Round 1", value: "November 28, 2026" },
+    { label: "Prize Distribution", value: "(Date To Be Announced)" },
   ];
 
   const eligibilityList = [

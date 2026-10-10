@@ -505,22 +505,22 @@ md:text-[clamp(18px,1.6vw,23px)]
 
               <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
                 <span className="font-bold">Registration Closes</span>
-                <span>October 15, 2026</span>
+                <span>November 22, 2026</span>
               </div>
 
               <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
                 <span className="font-bold">Quest Olympiad Round 1</span>
-                <span>November 7, 2026</span>
+                <span>November 28, 2026</span>
               </div>
 
               <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
                 <span className="font-bold">Quest Olympiad Round 2</span>
-                <span>Date TBA</span>
+                <span>(Date To Be Announced)</span>
               </div>
 
               <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
                 <span className="font-bold">Prize Distribution</span>
-                <span>Date TBA</span>
+                <span>(Date To Be Announced)</span>
               </div>
             </div>
           </div>
