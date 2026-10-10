@@ -10,35 +10,20 @@ export default function HomePage() {
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
-const perks = [
-  {
-    id: 1,
-    text: (
-      <>
-        <strong>Chance to visit IIT Hyderabad</strong>
-      </>
-    ),
-  },
-
-  {
-    id: 2,
-    text: (
-      <>
-       <strong>Exclusive goodies and rewards</strong>
-       
-      </>
-    ),
-  },
-
-  {
-    id: 3,
-    text: (
-      <>
-        <strong>Merit Medals and Certificates</strong>
-      </>
-    ),
-  },
-];
+  const perks = [
+    {
+      id: 1,
+      text: "Chance to visit IIT Hyderabad",
+    },
+    {
+      id: 3,
+      text: "Merit Medals and Certificates",
+    },
+    {
+      id: 2,
+      text: "Exclusive goodies and rewards",
+    },
+  ];
 
   return (
     <div
@@ -207,469 +192,438 @@ md:text-[clamp(18px,1.6vw,23px)]
           </div>
         </section>
 
-  {/* =====================================================
-    WHAT IS QUEST?
-===================================================== */}
-<section
-  className="
-    relative
-    w-full
-    px-6
-    pt-10
-    pb-[40px]
-    sm:px-10
-    sm:pt-16
-    md:px-[6.5%]
-    md:pt-[300px]
-    md:pb-[60px]
-  "
->
-  <div className="mx-auto w-full max-w-[1000px] ">
-
-    <h2
-      className="
-        mb-5
-        text-[32px]
-        font-black
-        uppercase
-        tracking-wide
-        text-[#0F2851]
-        sm:text-[38px]
-        md:text-[91px]
-      "
-    >
-      WHAT IS QUEST?
-    </h2>
-
-    <p
-      className="
-        mx-auto
-        max-w-[1178px]
-        text-[17px]
-        font-normal
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-      Nexus QUEST is a nationwide Talent Hunt Examination conducted
-      by Elan & nVision, a student body of IIT Hyderabad.
-    </p>
-
-    <p
-      className="
-        mx-auto
-        mt-5
-        max-w-[1178px]
-        text-center
-        text-[17px]
-        font-normal
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-      <strong>Key date:</strong> Round 1 – November last week
-    </p>
-
-    <p
-      className="
-        mx-auto
-        mt-3
-        max-w-[1178px]
-        text-center
-        text-[17px]
-        font-normal
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-      Challenge yourself beyond rote learning and discover
-      opportunities connected to IIT Hyderabad.
-    </p>
-
-  </div>
-</section>
-{/* =====================================================
-    EXAM STRUCTURE
-===================================================== */}
-<section
-  className="
-    relative
-    w-full
-    px-6
-    py-[60px]
-    sm:px-10
-    md:px-[6.5%]
-  "
->
-  <div className="mx-auto w-full max-w-[1000px] ">
-
-    <h2
-      className="
-        mb-6
-        text-[32px]
-        font-black
-        uppercase
-        tracking-wide
-        text-[#0F2851]
-        sm:text-[38px]
-        md:text-[91px]
-      "
-    >
-      EXAM STRUCTURE
-    </h2>
-
-    <p
-      className="
-        mx-auto
-        max-w-[1178px]
-        text-[17px]
-        font-normal
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-      The competition will be conducted in two rounds: an online
-      Round 1, followed by an offline Round 2. The top performers
-      from each class will be selected for Round 2, which will be an
-      offline exam at the IIT Hyderabad campus.
-    </p>
-
-    <p
-      className="
-        mx-auto
-        mt-5
-        max-w-[1178px]
-        text-[17px]
-        font-normal
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-      These students can enjoy exclusive campus experiences,
-      including a detailed campus tour.
-    </p>
-
-  </div>
-</section>
-
-
-{/* =====================================================
-    SYLLABUS
-===================================================== */}
-<section
-  className="
-    relative
-    w-full
-    px-6
-    pb-[60px]
-    sm:px-10
-    md:px-[6.5%]
-  "
->
-  <div className="mx-auto w-full max-w-[1000px] ">
-
-    <h2
-      className="
-        mb-5
-        text-[32px]
-        font-black
-        uppercase
-        tracking-wide
-        text-[#0F2851]
-        sm:text-[38px]
-        md:text-[91px]
-      "
-    >
-      SYLLABUS
-    </h2>
-
-    <p
-      className="
-        mx-auto
-        max-w-[1178px]
-        text-[17px]
-        font-normal
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-      The syllabus for each class is based exclusively on the
-      relevant portions of the NCERT textbook prescribed for
-      that class.
-    </p>
-
-  </div>
-</section>
-{/* =====================================================
-    ELIGIBILITY
-===================================================== */}
-<section
-  className="
-    relative
-    w-full
-    px-6
-    py-[60px]
-    sm:px-10
-    md:px-[6.5%]
-  "
->
-  <div className="mx-auto w-full max-w-[1000px]">
-
-    <h2
-      className="
-        mb-6
-        text-[32px]
-        font-black
-        uppercase
-        tracking-wide
-        text-[#0F2851]
-        sm:text-[38px]
-        md:text-[91px]
-      "
-    >
-      ELIGIBILITY
-    </h2>
-
-    <div
-      className="
-        mx-auto
-        max-w-[1178px]
-        space-y-5
-        text-[17px]
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-
-      <p>
-        Students currently enrolled in Classes 6 to 12 from any
-        recognized school are eligible to participate in Nexus QUEST.
-      </p>
-
-      <p>
-        Students from all educational boards (CBSE, ICSE, State boards)
-        within the specified grade range can apply for the examination.
-      </p>
-
-    </div>
-
-  </div>
-</section>
-{/* =====================================================
-    IMPORTANT DATES
-===================================================== */}
-<section
-  className="
-    relative
-    w-full
-    px-6
-    py-[60px]
-    sm:px-10
-    md:px-[6.5%]
-  "
->
-  <div className="mx-auto w-full max-w-[1000px]">
-
-    <h2
-      className="
-        mb-8
-        text-[32px]
-        font-black
-        uppercase
-        tracking-wide
-        text-[#0F2851]
-        sm:text-[38px]
-        md:text-[91px]
-      "
-    >
-      IMPORTANT DATES
-    </h2>
-
-    <div
-      className="
-        mx-auto
-        max-w-[1178px]
-        space-y-4
-        text-[17px]
-        leading-[1.5]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
-    >
-
-      <div className="flex flex-col gap-1 border-b border-[#0F2851]/30 pb-3 sm:flex-row sm:justify-between">
-        <span className="font-bold">
-          Registration Opens
-        </span>
-        <span>
-          September 8, 2026
-        </span>
-      </div>
-
-      <div className="flex flex-col gap-1 border-b border-[#0F2851]/30 pb-3 sm:flex-row sm:justify-between">
-        <span className="font-bold">
-          Registration Closes
-        </span>
-        <span>
-          October 15, 2026
-        </span>
-      </div>
-
-      <div className="flex flex-col gap-1 border-b border-[#0F2851]/30 pb-3 sm:flex-row sm:justify-between">
-        <span className="font-bold">
-          Quest Olympiad Round 1
-        </span>
-        <span>
-          November 7, 2026
-        </span>
-      </div>
-
-      <div className="flex flex-col gap-1 border-b border-[#0F2851]/30 pb-3 sm:flex-row sm:justify-between">
-        <span className="font-bold">
-          Quest Olympiad Round 2
-        </span>
-        <span>
-          Date TBA
-        </span>
-      </div>
-
-      <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
-        <span className="font-bold">
-          Prize Distribution
-        </span>
-        <span>
-          Date TBA
-        </span>
-      </div>
-
-    </div>
-
-  </div>
-  <section className="w-full px-6 py-16 md:px-12 lg:px-20">
-  <div className="mx-auto max-w-6xl">
-     <h2
-      className="
-        mb-8
-        text-[32px]
-        font-black
-        uppercase
-        tracking-wide
-        text-[#0F2851]
-        sm:text-[38px]
-        md:text-[65px]
-      "
-    >
-      Rewards & Opportunities
-    </h2>
-
-    <ul className="space-y-6 text-base leading-relaxed text-gray-700 md:text-[28px]">
-      <li className="flex gap-3">
-        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-black" />
-        <p>
-          <span className="font-semibold text-black">Merit Recognition:</span>{" "}
-          Top 3 achievers from every class in each school will receive Merit
-          Medals and Certificates of Recognition.
-        </p>
-      </li>
-
-      <li className="flex gap-3">
-        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-black" />
-        <p>
-          <span className="font-semibold text-black">Excellence Rewards:</span>{" "}
-          The Top 10 highest scorers in each class will receive Excellence
-          Medals, exclusive goodies, and rewards.
-        </p>
-      </li>
-
-      <li className="flex gap-3">
-        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-black" />
-        <p>
-          <span className="font-semibold text-black">
-            Special School Incentive:
-          </span>{" "}
-          Schools with 200+ registered students will receive Elan & nVision
-          festival passes for their top 2–3 performers at IIT Hyderabad.
-        </p>
-      </li>
-
-      <li className="flex gap-3">
-        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-black" />
-        <p>
-          <span className="font-semibold text-black">
-            IIT Hyderabad Campus Experience:
-          </span>{" "}
-          Winners will get an opportunity to visit IIT Hyderabad and explore
-          its cutting-edge laboratories and state-of-the-art facilities through
-          guided tours.
-        </p>
-      </li>
-
-      <li className="flex gap-3">
-        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-black" />
-        <p>
-          <span className="font-semibold text-black">
-            Student Interaction & Mentorship:
-          </span>{" "}
-          Participants will interact with current IIT Hyderabad students,
-          gaining valuable insights, mentorship, and lasting connections.
-        </p>
-      </li>
-
-      <li className="flex gap-3">
-        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-black" />
-        <p>
-          <span className="font-semibold text-black">
-            Grand Award Celebration:
-          </span>{" "}
-          Winners will be felicitated at a grand award ceremony at IIT
-          Hyderabad, with media coverage and recognition on official platforms.
-        </p>
-      </li>
-    </ul>
-  </div>
-</section>
-</section>
         {/* =====================================================
-    PERKS AND PRIZES
-    ===================================================== */}
+            WHAT IS QUEST?
+            ===================================================== */}
         <section
           className="
-    relative
-    w-full
-    px-6
-    pt-[45px]
-    pb-[60px]
-    sm:px-10
-    md:px-[6.5%]
-  "
+            relative
+            w-full
+            px-6
+            pt-10
+            pb-[40px]
+            sm:px-10
+            sm:pt-16
+            md:px-[6.5%]
+            md:pt-[260px]
+            md:pb-[50px]
+          "
         >
-          {/* HEADING */}
-          <div className="mx-auto w-full max-w-[1100px] ">
+          <div className="mx-auto w-full max-w-[1100px] text-left">
             <h2
               className="
-        text-[27px]
-        font-black
-        uppercase
-        tracking-wide
-        text-[#0F2851]
-        sm:text-[38px]
-        md:text-[91px]
-      "
+                mb-5
+                text-[32px]
+                font-black
+                uppercase
+                tracking-tight
+                text-[#0F2851]
+                sm:text-[40px]
+                md:text-[52px]
+              "
+            >
+              WHAT IS QUEST?
+            </h2>
+
+            <p
+              className="
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              Nexus QUEST is a nationwide Talent Hunt Examination conducted
+              by Elan &amp; nVision, a student body of IIT Hyderabad.
+            </p>
+
+            <p
+              className="
+                mt-4
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              <strong>Key date:</strong> Round 1 – November last week
+            </p>
+
+            <p
+              className="
+                mt-3
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              Challenge yourself beyond rote learning and discover
+              opportunities connected to IIT Hyderabad.
+            </p>
+          </div>
+        </section>
+
+        {/* =====================================================
+            EXAM STRUCTURE
+            ===================================================== */}
+        <section
+          className="
+            relative
+            w-full
+            px-6
+            py-[35px]
+            sm:px-10
+            sm:py-[45px]
+            md:px-[6.5%]
+            md:py-[50px]
+          "
+        >
+          <div className="mx-auto w-full max-w-[1100px] text-left">
+            <h2
+              className="
+                mb-5
+                text-[32px]
+                font-black
+                uppercase
+                tracking-tight
+                text-[#0F2851]
+                sm:text-[40px]
+                md:text-[52px]
+              "
+            >
+              EXAM STRUCTURE
+            </h2>
+
+            <p
+              className="
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              The competition will be conducted in two rounds: an online
+              Round 1, followed by an offline Round 2. The top performers
+              from each class will be selected for Round 2, which will be an
+              offline exam at the IIT Hyderabad campus.
+            </p>
+
+            <p
+              className="
+                mt-4
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              These students can enjoy exclusive campus experiences,
+              including a detailed campus tour.
+            </p>
+          </div>
+        </section>
+
+        {/* =====================================================
+            SYLLABUS
+            ===================================================== */}
+        <section
+          className="
+            relative
+            w-full
+            px-6
+            pb-[35px]
+            sm:px-10
+            sm:pb-[45px]
+            md:px-[6.5%]
+            md:pb-[50px]
+          "
+        >
+          <div className="mx-auto w-full max-w-[1100px] text-left">
+            <h2
+              className="
+                mb-5
+                text-[32px]
+                font-black
+                uppercase
+                tracking-tight
+                text-[#0F2851]
+                sm:text-[40px]
+                md:text-[52px]
+              "
+            >
+              SYLLABUS
+            </h2>
+
+            <p
+              className="
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              The syllabus for each class is based exclusively on the
+              relevant portions of the NCERT textbook prescribed for
+              that class.
+            </p>
+          </div>
+        </section>
+
+        {/* =====================================================
+            ELIGIBILITY
+            ===================================================== */}
+        <section
+          className="
+            relative
+            w-full
+            px-6
+            py-[35px]
+            sm:px-10
+            sm:py-[45px]
+            md:px-[6.5%]
+            md:py-[50px]
+          "
+        >
+          <div className="mx-auto w-full max-w-[1100px] text-left">
+            <h2
+              className="
+                mb-5
+                text-[32px]
+                font-black
+                uppercase
+                tracking-tight
+                text-[#0F2851]
+                sm:text-[40px]
+                md:text-[52px]
+              "
+            >
+              ELIGIBILITY
+            </h2>
+
+            <div
+              className="
+                space-y-4
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              <p>
+                Students currently enrolled in Classes 6 to 12 from any
+                recognized school are eligible to participate in Nexus QUEST.
+              </p>
+
+              <p>
+                Students from all educational boards (CBSE, ICSE, State boards)
+                within the specified grade range can apply for the examination.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* =====================================================
+            IMPORTANT DATES
+            ===================================================== */}
+        <section
+          className="
+            relative
+            w-full
+            px-6
+            py-[35px]
+            sm:px-10
+            sm:py-[45px]
+            md:px-[6.5%]
+            md:py-[50px]
+          "
+        >
+          <div className="mx-auto w-full max-w-[1100px] text-left">
+            <h2
+              className="
+                mb-6
+                text-[32px]
+                font-black
+                uppercase
+                tracking-tight
+                text-[#0F2851]
+                sm:text-[40px]
+                md:text-[52px]
+              "
+            >
+              IMPORTANT DATES
+            </h2>
+
+            <div
+              className="
+                space-y-4
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
+            >
+              <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
+                <span className="font-bold">Registration Opens</span>
+                <span>September 8, 2026</span>
+              </div>
+
+              <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
+                <span className="font-bold">Registration Closes</span>
+                <span>October 15, 2026</span>
+              </div>
+
+              <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
+                <span className="font-bold">Quest Olympiad Round 1</span>
+                <span>November 7, 2026</span>
+              </div>
+
+              <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
+                <span className="font-bold">Quest Olympiad Round 2</span>
+                <span>Date TBA</span>
+              </div>
+
+              <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <span className="font-bold">Prize Distribution</span>
+                <span>Date TBA</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* =====================================================
+            REWARDS & OPPORTUNITIES
+            ===================================================== */}
+        <section
+          className="
+            relative
+            w-full
+            px-6
+            py-[35px]
+            sm:px-10
+            sm:py-[45px]
+            md:px-[6.5%]
+            md:py-[50px]
+          "
+        >
+          <div className="mx-auto w-full max-w-[1100px] text-left">
+            <h2
+              className="
+                mb-6
+                text-[32px]
+                font-black
+                uppercase
+                tracking-tight
+                text-[#0F2851]
+                sm:text-[40px]
+                md:text-[52px]
+              "
+            >
+              Rewards &amp; Opportunities
+            </h2>
+
+            <ul className="space-y-5 text-[16px] font-normal leading-[1.6] text-[#0F2851] sm:text-[18px] md:text-[20px]">
+              <li className="flex gap-3 items-start">
+                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <p>
+                  <span className="font-bold">Merit Recognition:</span>{" "}
+                  Top 3 achievers from every class in each school will receive Merit
+                  Medals and Certificates of Recognition.
+                </p>
+              </li>
+
+              <li className="flex gap-3 items-start">
+                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <p>
+                  <span className="font-bold">Excellence Rewards:</span>{" "}
+                  The Top 10 highest scorers in each class will receive Excellence
+                  Medals, exclusive goodies, and rewards.
+                </p>
+              </li>
+
+              <li className="flex gap-3 items-start">
+                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <p>
+                  <span className="font-bold">Special School Incentive:</span>{" "}
+                  Schools with 200+ registered students will receive Elan &amp; nVision
+                  festival passes for their top 2–3 performers at IIT Hyderabad.
+                </p>
+              </li>
+
+              <li className="flex gap-3 items-start">
+                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <p>
+                  <span className="font-bold">IIT Hyderabad Campus Experience:</span>{" "}
+                  Winners will get an opportunity to visit IIT Hyderabad and explore
+                  its cutting-edge laboratories and state-of-the-art facilities through
+                  guided tours.
+                </p>
+              </li>
+
+              <li className="flex gap-3 items-start">
+                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <p>
+                  <span className="font-bold">Student Interaction &amp; Mentorship:</span>{" "}
+                  Participants will interact with current IIT Hyderabad students,
+                  gaining valuable insights, mentorship, and lasting connections.
+                </p>
+              </li>
+
+              <li className="flex gap-3 items-start">
+                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <p>
+                  <span className="font-bold">Grand Award Celebration:</span>{" "}
+                  Winners will be felicitated at a grand award ceremony at IIT
+                  Hyderabad, with media coverage and recognition on official platforms.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* =====================================================
+            PERKS AND PRIZES
+            ===================================================== */}
+        <section
+          className="
+            relative
+            w-full
+            px-6
+            pt-[35px]
+            pb-[80px]
+            sm:px-10
+            md:px-[6.5%]
+          "
+        >
+          {/* HEADING */}
+          <div className="mx-auto w-full max-w-[1100px] text-left">
+            <h2
+              className="
+                mb-5
+                text-[32px]
+                font-black
+                uppercase
+                tracking-tight
+                text-[#0F2851]
+                sm:text-[40px]
+                md:text-[52px]
+              "
             >
               PERKS AND PRIZES
             </h2>
@@ -677,15 +631,14 @@ md:text-[clamp(18px,1.6vw,23px)]
             {/* DESCRIPTION */}
             <p
               className="
-        mb-7
-        max-w-[1178px]
-        text-[17px]
-        font-normal
-        leading-[1.45]
-        text-[#0F2851]
-        sm:text-[19px]
-        md:text-[28px]
-      "
+                mb-8
+                text-[16px]
+                font-normal
+                leading-[1.6]
+                text-[#0F2851]
+                sm:text-[18px]
+                md:text-[20px]
+              "
             >
               The participating students stand to gain many prizes and goodies,
               as well as invaluable experience by participating in the Nexus
@@ -694,73 +647,75 @@ md:text-[clamp(18px,1.6vw,23px)]
           </div>
 
           {/* =====================================================
-      CARDS
-      ===================================================== */}
+              CARDS
+              ===================================================== */}
           <div
             className="
-      mx-auto
-      grid
-      w-full
-      max-w-[1178px]
-      grid-cols-1
-      gap-5
-      sm:grid-cols-2
-      md:grid-cols-3
-      md:gap-x-[38px]
-      md:gap-y-[22px]
-    "
+              mx-auto
+              grid
+              w-full
+              max-w-[1100px]
+              grid-cols-1
+              gap-6
+              sm:grid-cols-2
+              md:grid-cols-3
+              md:gap-7
+            "
           >
             {perks.map((perk) => (
               <div
                 key={perk.id}
                 className="
-          flex
-          h-[355px]
-          md:h-[492px]
-          md:w-[367px]
-          w-full
-          flex-col
-          rounded-[22px]
-          bg-[#A9CEFF]
-          p-[16px]
-        "
+                  flex
+                  w-full
+                  flex-col
+                  rounded-[24px]
+                  bg-[#A2C7FF]
+                  p-4
+                  sm:p-5
+                  shadow-sm
+                  transition-transform
+                  duration-200
+                  hover:-translate-y-1
+                "
               >
                 {/* =================================================
-            IMAGE
-            ================================================= */}
+                    IMAGE
+                    ================================================= */}
                 <div
                   className="
-              h-[255px]
-              w-full
-              shrink-0
-              overflow-hidden
-              rounded-[15px]
-              bg-[#F9F5E8]
-              md:h-[351px]
-              md:w-[333px]
-            "
+                    relative
+                    w-full
+                    h-[230px]
+                    sm:h-[250px]
+                    md:h-[280px]
+                    shrink-0
+                    overflow-hidden
+                    rounded-[18px]
+                    bg-[#F9F5E8]
+                  "
                 >
                   <Image
                     src={`/pics/perk${perk.id}.png`}
-                    alt={`Perk ${perk.id}`}
-                    width={500}
-                    height={500}
-                    className="h-full w-full object-cover"
+                    alt={perk.text}
+                    fill
+                    className="object-cover"
                   />
                 </div>
 
                 {/* =================================================
-            DESCRIPTION
-            ================================================= */}
-                <div className="flex flex-1 items-center justify-center pt-3 text-center text-[#0F2851]">
+                    DESCRIPTION
+                    ================================================= */}
+                <div className="flex flex-1 items-center justify-center pt-4 pb-1 text-center">
                   <p
                     className="
-              text-[14px]
-              font-normal
-              leading-[1.35]
-              text-[#0F2851]
-              md:text-[36px]
-            "
+                      text-[16px]
+                      font-bold
+                      leading-snug
+                      text-[#0F2851]
+                      sm:text-[18px]
+                      md:text-[20px]
+                    "
                   >
                     {perk.text}
                   </p>
