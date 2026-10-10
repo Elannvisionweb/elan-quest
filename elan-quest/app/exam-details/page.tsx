@@ -31,18 +31,20 @@ style={{
             px-5
             sm:px-8
             md:px-0
-            bg-[#FAF6E7]
-            border-b
-            border-[#092B55]/10
-            shadow-[0_14px_28px_-6px_rgba(0,0,0,0.14),0_6px_12px_-3px_rgba(0,0,0,0.08)]
+            shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]
           "
-          style={{
-            backgroundImage: "url('/pics/pattern.png')",
-            backgroundSize: "auto",
-            backgroundPosition: "center top",
-            backgroundRepeat: "repeat",
-          }}
         >
+          {/* USER FIGMA HERO BANNER BACKGROUND */}
+          <div className="absolute inset-0 z-0 pointer-events-none">
+            <Image
+              src="/pics/exam-hero-bg.png"
+              alt="Exam Details Hero Background"
+              fill
+              priority
+              className="object-cover object-center"
+            />
+          </div>
+
           {/* DESKTOP HEADING - UNCHANGED */}
           <h1
             className="
@@ -64,7 +66,7 @@ style={{
           </h1>
 
           {/* MOBILE HERO CONTAINER */}
-          <div className="flex h-full w-full items-center justify-between md:hidden">
+          <div className="relative z-10 flex h-full w-full items-center justify-between md:hidden">
             <h1
               className="
                 font-['Nexa_Text']
