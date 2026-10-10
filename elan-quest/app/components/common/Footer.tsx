@@ -3,15 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  MessageCircle,
   Mail,
   Phone,
   Youtube,
-  Twitter,
   Instagram,
   Facebook,
   Linkedin,
 } from "lucide-react";
+import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -64,7 +63,7 @@ export default function Footer() {
               className="flex items-center gap-2 text-xs hover:underline mt-0.5"
             >
               <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#0F2851] text-white">
-                <MessageCircle className="w-3 h-3 fill-current stroke-none" />
+                <FaWhatsapp className="w-3 h-3 fill-current" />
               </span>
               <span className="underline">Click Here To Join</span>
             </a>
@@ -131,19 +130,49 @@ export default function Footer() {
 
           {/* SOCIAL ICONS */}
           <div className="flex items-center gap-2 my-1">
-            <a href="#" className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80">
+            <a
+              href="https://www.youtube.com/user/ElanIITHyderabad"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80 transition-opacity"
+              aria-label="YouTube"
+            >
               <Youtube className="w-3.5 h-3.5" />
             </a>
-            <a href="#" className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80">
-              <Twitter className="w-3.5 h-3.5" />
+            <a
+              href="https://x.com/elan_nvision?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80 transition-opacity"
+              aria-label="X (formerly Twitter)"
+            >
+              <FaXTwitter className="w-3.5 h-3.5" />
             </a>
-            <a href="#" className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80">
+            <a
+              href="https://www.instagram.com/elan_nvision.iith/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80 transition-opacity"
+              aria-label="Instagram"
+            >
               <Instagram className="w-3.5 h-3.5" />
             </a>
-            <a href="#" className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80">
+            <a
+              href="https://www.facebook.com/elannvision.iithyderabad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80 transition-opacity"
+              aria-label="Facebook"
+            >
               <Facebook className="w-3.5 h-3.5" />
             </a>
-            <a href="#" className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80">
+            <a
+              href="https://in.linkedin.com/company/elan-nvision-iith"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-full bg-[#0F2851] text-white hover:opacity-80 transition-opacity"
+              aria-label="LinkedIn"
+            >
               <Linkedin className="w-3.5 h-3.5" />
             </a>
           </div>
