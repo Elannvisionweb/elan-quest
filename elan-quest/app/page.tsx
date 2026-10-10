@@ -209,17 +209,19 @@ md:text-[clamp(18px,1.6vw,23px)]
             md:pb-[50px]
           "
         >
-          <div className="mx-auto w-full max-w-[1100px] text-left">
+          <div className="mx-auto w-full max-w-[1180px] text-left">
             <h2
               className="
                 mb-5
-                text-[32px]
+                text-[34px]
                 font-black
                 uppercase
                 tracking-tight
                 text-[#0F2851]
-                sm:text-[40px]
-                md:text-[52px]
+                sm:text-[46px]
+                md:text-[64px]
+                lg:text-[76px]
+                leading-[1.08]
               "
             >
               WHAT IS QUEST?
@@ -227,12 +229,13 @@ md:text-[clamp(18px,1.6vw,23px)]
 
             <p
               className="
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               Nexus QUEST is a nationwide Talent Hunt Examination conducted
@@ -242,12 +245,13 @@ md:text-[clamp(18px,1.6vw,23px)]
             <p
               className="
                 mt-4
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               <strong>Key date:</strong> Round 1 – November last week
@@ -256,12 +260,13 @@ md:text-[clamp(18px,1.6vw,23px)]
             <p
               className="
                 mt-3
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               Challenge yourself beyond rote learning and discover
@@ -285,17 +290,19 @@ md:text-[clamp(18px,1.6vw,23px)]
             md:py-[50px]
           "
         >
-          <div className="mx-auto w-full max-w-[1100px] text-left">
+          <div className="mx-auto w-full max-w-[1180px] text-left">
             <h2
               className="
                 mb-5
-                text-[32px]
+                text-[34px]
                 font-black
                 uppercase
                 tracking-tight
                 text-[#0F2851]
-                sm:text-[40px]
-                md:text-[52px]
+                sm:text-[46px]
+                md:text-[64px]
+                lg:text-[76px]
+                leading-[1.08]
               "
             >
               EXAM STRUCTURE
@@ -303,12 +310,13 @@ md:text-[clamp(18px,1.6vw,23px)]
 
             <p
               className="
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               The competition will be conducted in two rounds: an online
@@ -320,12 +328,13 @@ md:text-[clamp(18px,1.6vw,23px)]
             <p
               className="
                 mt-4
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               These students can enjoy exclusive campus experiences,
@@ -349,17 +358,19 @@ md:text-[clamp(18px,1.6vw,23px)]
             md:pb-[50px]
           "
         >
-          <div className="mx-auto w-full max-w-[1100px] text-left">
+          <div className="mx-auto w-full max-w-[1180px] text-left">
             <h2
               className="
                 mb-5
-                text-[32px]
+                text-[34px]
                 font-black
                 uppercase
                 tracking-tight
                 text-[#0F2851]
-                sm:text-[40px]
-                md:text-[52px]
+                sm:text-[46px]
+                md:text-[64px]
+                lg:text-[76px]
+                leading-[1.08]
               "
             >
               SYLLABUS
@@ -367,12 +378,13 @@ md:text-[clamp(18px,1.6vw,23px)]
 
             <p
               className="
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               The syllabus for each class is based exclusively on the
@@ -397,17 +409,19 @@ md:text-[clamp(18px,1.6vw,23px)]
             md:py-[50px]
           "
         >
-          <div className="mx-auto w-full max-w-[1100px] text-left">
+          <div className="mx-auto w-full max-w-[1180px] text-left">
             <h2
               className="
                 mb-5
-                text-[32px]
+                text-[34px]
                 font-black
                 uppercase
                 tracking-tight
                 text-[#0F2851]
-                sm:text-[40px]
-                md:text-[52px]
+                sm:text-[46px]
+                md:text-[64px]
+                lg:text-[76px]
+                leading-[1.08]
               "
             >
               ELIGIBILITY
@@ -416,12 +430,13 @@ md:text-[clamp(18px,1.6vw,23px)]
             <div
               className="
                 space-y-4
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               <p>
@@ -452,17 +467,19 @@ md:text-[clamp(18px,1.6vw,23px)]
             md:py-[50px]
           "
         >
-          <div className="mx-auto w-full max-w-[1100px] text-left">
+          <div className="mx-auto w-full max-w-[1180px] text-left">
             <h2
               className="
                 mb-6
-                text-[32px]
+                text-[34px]
                 font-black
                 uppercase
                 tracking-tight
                 text-[#0F2851]
-                sm:text-[40px]
-                md:text-[52px]
+                sm:text-[46px]
+                md:text-[64px]
+                lg:text-[76px]
+                leading-[1.08]
               "
             >
               IMPORTANT DATES
@@ -471,12 +488,13 @@ md:text-[clamp(18px,1.6vw,23px)]
             <div
               className="
                 space-y-4
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               <div className="flex flex-col gap-1 border-b border-[#0F2851]/20 pb-3 sm:flex-row sm:justify-between">
@@ -522,25 +540,27 @@ md:text-[clamp(18px,1.6vw,23px)]
             md:py-[50px]
           "
         >
-          <div className="mx-auto w-full max-w-[1100px] text-left">
+          <div className="mx-auto w-full max-w-[1180px] text-left">
             <h2
               className="
                 mb-6
-                text-[32px]
+                text-[34px]
                 font-black
                 uppercase
                 tracking-tight
                 text-[#0F2851]
-                sm:text-[40px]
-                md:text-[52px]
+                sm:text-[46px]
+                md:text-[64px]
+                lg:text-[76px]
+                leading-[1.08]
               "
             >
               Rewards &amp; Opportunities
             </h2>
 
-            <ul className="space-y-5 text-[16px] font-normal leading-[1.6] text-[#0F2851] sm:text-[18px] md:text-[20px]">
+            <ul className="space-y-5 text-[18px] font-normal leading-[1.5] text-[#0F2851] sm:text-[20px] md:text-[24px] lg:text-[27px]">
               <li className="flex gap-3 items-start">
-                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
                 <p>
                   <span className="font-bold">Merit Recognition:</span>{" "}
                   Top 3 achievers from every class in each school will receive Merit
@@ -549,7 +569,7 @@ md:text-[clamp(18px,1.6vw,23px)]
               </li>
 
               <li className="flex gap-3 items-start">
-                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
                 <p>
                   <span className="font-bold">Excellence Rewards:</span>{" "}
                   The Top 10 highest scorers in each class will receive Excellence
@@ -558,7 +578,7 @@ md:text-[clamp(18px,1.6vw,23px)]
               </li>
 
               <li className="flex gap-3 items-start">
-                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
                 <p>
                   <span className="font-bold">Special School Incentive:</span>{" "}
                   Schools with 200+ registered students will receive Elan &amp; nVision
@@ -567,7 +587,7 @@ md:text-[clamp(18px,1.6vw,23px)]
               </li>
 
               <li className="flex gap-3 items-start">
-                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
                 <p>
                   <span className="font-bold">IIT Hyderabad Campus Experience:</span>{" "}
                   Winners will get an opportunity to visit IIT Hyderabad and explore
@@ -577,7 +597,7 @@ md:text-[clamp(18px,1.6vw,23px)]
               </li>
 
               <li className="flex gap-3 items-start">
-                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
                 <p>
                   <span className="font-bold">Student Interaction &amp; Mentorship:</span>{" "}
                   Participants will interact with current IIT Hyderabad students,
@@ -586,7 +606,7 @@ md:text-[clamp(18px,1.6vw,23px)]
               </li>
 
               <li className="flex gap-3 items-start">
-                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
+                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
                 <p>
                   <span className="font-bold">Grand Award Celebration:</span>{" "}
                   Winners will be felicitated at a grand award ceremony at IIT
@@ -612,17 +632,19 @@ md:text-[clamp(18px,1.6vw,23px)]
           "
         >
           {/* HEADING */}
-          <div className="mx-auto w-full max-w-[1100px] text-left">
+          <div className="mx-auto w-full max-w-[1180px] text-left">
             <h2
               className="
                 mb-5
-                text-[32px]
+                text-[34px]
                 font-black
                 uppercase
                 tracking-tight
                 text-[#0F2851]
-                sm:text-[40px]
-                md:text-[52px]
+                sm:text-[46px]
+                md:text-[64px]
+                lg:text-[76px]
+                leading-[1.08]
               "
             >
               PERKS AND PRIZES
@@ -632,12 +654,13 @@ md:text-[clamp(18px,1.6vw,23px)]
             <p
               className="
                 mb-8
-                text-[16px]
+                text-[18px]
                 font-normal
-                leading-[1.6]
+                leading-[1.5]
                 text-[#0F2851]
-                sm:text-[18px]
-                md:text-[20px]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
               "
             >
               The participating students stand to gain many prizes and goodies,
@@ -654,7 +677,7 @@ md:text-[clamp(18px,1.6vw,23px)]
               mx-auto
               grid
               w-full
-              max-w-[1100px]
+              max-w-[1180px]
               grid-cols-1
               gap-6
               sm:grid-cols-2
@@ -687,8 +710,8 @@ md:text-[clamp(18px,1.6vw,23px)]
                     relative
                     w-full
                     h-[230px]
-                    sm:h-[250px]
-                    md:h-[280px]
+                    sm:h-[260px]
+                    md:h-[300px]
                     shrink-0
                     overflow-hidden
                     rounded-[18px]
@@ -709,12 +732,13 @@ md:text-[clamp(18px,1.6vw,23px)]
                 <div className="flex flex-1 items-center justify-center pt-4 pb-1 text-center">
                   <p
                     className="
-                      text-[16px]
+                      text-[18px]
                       font-bold
-                      leading-snug
+                      leading-tight
                       text-[#0F2851]
-                      sm:text-[18px]
-                      md:text-[20px]
+                      sm:text-[21px]
+                      md:text-[25px]
+                      lg:text-[27px]
                     "
                   >
                     {perk.text}
