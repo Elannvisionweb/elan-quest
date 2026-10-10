@@ -297,22 +297,35 @@ export default function ResultsPage() {
 /> 
 
       {/* Hero Header Banner */}
-      <header className="relative z-10 w-full pt-8 pb-10 sm:pt-12 sm:pb-16 px-5 sm:px-6 md:px-16 flex items-center justify-between max-w-7xl mx-auto">
-        <div>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#0F2851] uppercase">
-            RESULTS
-          </h1>
+      <header className="relative z-20 w-full overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
+        {/* USER FIGMA HERO BANNER BACKGROUND */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/pics/exam-hero-bg.png"
+            alt="Results Hero Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
         </div>
 
-        {/* Trophy Illustration Graphic */}
-        <div className="relative w-28 h-28 sm:w-48 sm:h-48 md:w-56 md:h-56 flex-shrink-0">
-          <Image
-            src="/pics/prize.png" // Ensure this image path matches your public folder
-            alt="Trophy Celebration"
-            fill
-            className="object-contain"
-            priority
-          />
+        <div className="relative z-10 w-full pt-8 pb-10 sm:pt-12 sm:pb-16 px-5 sm:px-6 md:px-16 flex items-center justify-between max-w-7xl mx-auto">
+          <div>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#0F2851] uppercase">
+              RESULTS
+            </h1>
+          </div>
+
+          {/* Trophy Illustration Graphic */}
+          <div className="relative w-28 h-28 sm:w-48 sm:h-48 md:w-56 md:h-56 flex-shrink-0">
+            <Image
+              src="/pics/prize.png" // Ensure this image path matches your public folder
+              alt="Trophy Celebration"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
       </header>
 

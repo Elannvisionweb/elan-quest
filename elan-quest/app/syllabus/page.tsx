@@ -73,42 +73,57 @@ export default function SyllabusPage() {
 }}
       />
 
-      {/* =========================
-          PAGE CONTENT
-          ========================= */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 md:px-[6.5%] md:py-12">
-          <section
+      {/* =======================================================
+          HERO BANNER
+          ======================================================= */}
+      <section
+        className="
+          relative
+          z-20
+          w-full
+          h-[130px]
+          sm:h-[180px]
+          md:h-[515px]
+          overflow-hidden
+          px-5
+          sm:px-8
+          md:px-0
+          shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]
+        "
+      >
+        {/* USER FIGMA HERO BANNER BACKGROUND */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/pics/exam-hero-bg.png"
+            alt="Syllabus Hero Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+
+        {/* DESKTOP HEADING */}
+        <h1
           className="
-            relative
-            h-[120px]
-            w-full
-            overflow-hidden
-            sm:h-[180px]
-            md:h-[515px]
+            absolute
+            left-[146px]
+            top-[269px]
+            z-10
+            hidden
+            font-['Nexa_Text']
+            text-[91px]
+            font-black
+            uppercase
+            leading-none
+            text-[#092B55]
+            md:block
           "
         >
-
-         <h1
-            className="
-              absolute
-              left-[146px]
-              top-[269px]
-              z-10
-              hidden
-              font-['Nexa_Text']
-              text-[91px]
-              font-black
-              uppercase
-              leading-none
-              text-[#092B55]
-              md:block
-            "
-          >
-       SYLLABUS
-          </h1>
+          SYLLABUS
+        </h1>
 
         {/* MOBILE HERO CONTAINER */}
-        <div className="flex h-full w-full items-center justify-between md:hidden">
+        <div className="relative z-10 flex h-full w-full items-center justify-between md:hidden">
           <h1
             className="
               font-['Nexa_Text']
@@ -143,29 +158,33 @@ export default function SyllabusPage() {
           </div>
         </div>
 
-          {/* DESKTOP IMAGE - UNCHANGED */}
-          <div
-            className="
-              absolute
-              left-[887px]
-              top-[48px]
-              z-10
-              hidden
-              h-[483px]
-              w-[461px]
-              md:block
-            "
-          >
-            <Image
-              src="/pics/book.png"
-              alt="Syllabus"
-              fill
-              priority
-              className="object-contain"
-            />
-          </div>
+        {/* DESKTOP IMAGE - UNCHANGED */}
+        <div
+          className="
+            absolute
+            left-[887px]
+            top-[48px]
+            z-10
+            hidden
+            h-[483px]
+            w-[461px]
+            md:block
+          "
+        >
+          <Image
+            src="/pics/book.png"
+            alt="Syllabus"
+            fill
+            priority
+            className="object-contain"
+          />
+        </div>
+      </section>
 
-        </section>
+      {/* =========================
+          PAGE CONTENT
+          ========================= */}
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 md:px-[6.5%] md:py-12">
         {/* Intro copy */}
         <div
           className="
