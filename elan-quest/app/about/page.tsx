@@ -31,16 +31,21 @@ export default function AboutPage() {
       />
 
       {/* ──────────────── 1. HEADER ──────────────── */}
-      <header className="relative z-30 w-full shrink-0 border-b border-black/10 bg-[#F0ECCF]"
-      style={{
-          backgroundImage: "url('/pics/pattern.png')",
-          backgroundSize: "auto",
-          backgroundRepeat: "repeat",
-          backgroundPosition: "center",
-        }}>
-        <div className="relative mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
+      <header className="relative z-30 w-full shrink-0 overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
+        {/* USER FIGMA HERO BANNER BACKGROUND */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/pics/exam-hero-bg.png"
+            alt="About Us Hero Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
           {/* ABOUT US TITLE */}
-          <h1 className="shrink-0 text-3xl font-extrabold tracking-tight text-[#0f2438] sm:text-4xl md:text-5xl">
+          <h1 className="shrink-0 text-3xl font-black uppercase tracking-tight text-[#092B55] sm:text-4xl md:text-5xl">
             ABOUT US
           </h1>
 

@@ -1,8 +1,38 @@
-"use client";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <main className="relative w-full overflow-x-hidden bg-[#F0ECCF]">
+      {/* ──────────────── 1. HERO BANNER ──────────────── */}
+      <header className="relative z-30 w-full shrink-0 overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
+        {/* HERO BANNER BACKGROUND */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/pics/exam-hero-bg.png"
+            alt="About Us Hero Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
+          <h1 className="shrink-0 text-3xl font-black uppercase tracking-tight text-[#092B55] sm:text-4xl md:text-5xl">
+            ABOUT US
+          </h1>
+
+          <div className="relative h-[80px] w-[120px] shrink-0 sm:h-[100px] sm:w-[160px] md:h-[160px] md:w-[400px]">
+            <Image
+              src="/pics/medal.png"
+              alt="Hand holding medal"
+              fill
+              priority
+              className="object-contain object-right"
+            />
+          </div>
+        </div>
+      </header>
+
       {/* Pattern Background */}
       <div
         className="absolute inset-0 z-0"
@@ -16,12 +46,6 @@ export default function AboutPage() {
 
       {/* About Content */}
       <section className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 md:px-[6.5%] md:py-12">
-        
-        {/* Heading */}
-        <h1 className="mb-7 text-4xl font-black uppercase tracking-wide text-[#0F2851] md:text-5xl">
-          ABOUT US
-        </h1>
-
         <div className="max-w-[900px] text-[#0F2851]">
 
           {/* About Nexus Quest */}

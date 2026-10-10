@@ -17,7 +17,7 @@ export default function Menu({ closeMenu, menuOpen }: Props) {
 
   const menuList = [
     { id: 1, title: "Home", href: "/", comingSoon: false },
-    { id: 2, title: "About Us", href: "/about-us", comingSoon: false },
+    { id: 2, title: "About Us", href: "/about", comingSoon: false },
     { id: 3, title: "Exam Details", href: "/exam-details", comingSoon: false },
     { id: 4, title: "Syllabus", href: "/syllabus", comingSoon: false },
     { id: 5, title: "Results", href: "/results", comingSoon: false },
