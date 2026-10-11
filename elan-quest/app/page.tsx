@@ -198,7 +198,9 @@ md:text-[clamp(18px,1.6vw,23px)]
             sm:px-10
             sm:pt-16
             md:px-[6.5%]
-            md:pt-[260px]
+            md:pt-[380px]
+            lg:pt-[440px]
+            xl:pt-[500px]
             md:pb-[50px]
           "
         >
@@ -335,45 +337,10 @@ md:text-[clamp(18px,1.6vw,23px)]
               These students can enjoy exclusive campus experiences,
               including a detailed campus tour.
             </p>
-          </div>
-        </section>
-
-        {/* =====================================================
-            SYLLABUS
-            ===================================================== */}
-        <section
-          className="
-            relative
-            w-full
-            px-6
-            pb-[35px]
-            sm:px-10
-            sm:pb-[45px]
-            md:px-[6.5%]
-            md:pb-[50px]
-          "
-        >
-          <div className="mx-auto w-full max-w-[1180px] text-left">
-            <h2
-              className="
-                mb-5
-                font-['Nexa_Text']
-                text-[34px]
-                font-black
-                uppercase
-                tracking-tight
-                text-[#0F2851]
-                sm:text-[46px]
-                md:text-[64px]
-                lg:text-[76px]
-                leading-[1.08]
-              "
-            >
-              SYLLABUS
-            </h2>
 
             <p
               className="
+                mt-4
                 text-[18px]
                 font-normal
                 leading-[1.5]
@@ -531,11 +498,14 @@ md:text-[clamp(18px,1.6vw,23px)]
             relative
             w-full
             px-6
-            py-[35px]
+            pt-[35px]
+            pb-[80px]
             sm:px-10
-            sm:py-[45px]
+            sm:pt-[45px]
+            sm:pb-[90px]
             md:px-[6.5%]
-            md:py-[50px]
+            md:pt-[50px]
+            md:pb-[100px]
           "
         >
           <div className="mx-auto w-full max-w-[1180px] text-left">
@@ -556,6 +526,23 @@ md:text-[clamp(18px,1.6vw,23px)]
             >
               REWARDS &amp; OPPORTUNITIES
             </h2>
+
+            <p
+              className="
+                mb-8
+                text-[18px]
+                font-normal
+                leading-[1.5]
+                text-[#0F2851]
+                sm:text-[20px]
+                md:text-[24px]
+                lg:text-[27px]
+              "
+            >
+              The participating students stand to gain many prizes and goodies,
+              as well as invaluable experience by participating in the Nexus
+              QUEST examination:
+            </p>
 
             <div className="space-y-5 text-[18px] font-normal leading-[1.5] text-[#0F2851] sm:text-[20px] md:text-[24px] lg:text-[27px]">
               <p>
@@ -596,60 +583,6 @@ md:text-[clamp(18px,1.6vw,23px)]
               </p>
             </div>
           </div>
-        </section>
-
-        {/* =====================================================
-            PERKS AND PRIZES
-            ===================================================== */}
-        <section
-          className="
-            relative
-            w-full
-            px-6
-            pt-[35px]
-            pb-[80px]
-            sm:px-10
-            md:px-[6.5%]
-          "
-        >
-          {/* HEADING */}
-          <div className="mx-auto w-full max-w-[1180px] text-left">
-            <h2
-              className="
-                mb-5
-                font-['Nexa_Text']
-                text-[34px]
-                font-black
-                uppercase
-                tracking-tight
-                text-[#0F2851]
-                sm:text-[46px]
-                md:text-[64px]
-                lg:text-[76px]
-                leading-[1.08]
-              "
-            >
-              PERKS AND PRIZES
-            </h2>
-
-            {/* DESCRIPTION */}
-            <p
-              className="
-                mb-8
-                text-[18px]
-                font-normal
-                leading-[1.5]
-                text-[#0F2851]
-                sm:text-[20px]
-                md:text-[24px]
-                lg:text-[27px]
-              "
-            >
-              The participating students stand to gain many prizes and goodies,
-              as well as invaluable experience by participating in the Nexus
-              QUEST examination:
-            </p>
-          </div>
 
           {/* =====================================================
               CARDS
@@ -657,6 +590,9 @@ md:text-[clamp(18px,1.6vw,23px)]
           <div
             className="
               mx-auto
+              mt-10
+              sm:mt-12
+              md:mt-14
               grid
               w-full
               max-w-[1180px]
