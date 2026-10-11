@@ -1,15 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import RegisterPopUp from "./components/common/RegisterPopUp";
+import { useMenu } from "./context/MenuContent";
 
 export default function HomePage() {
-  const [showPopup, setShowPopup] = useState(false);
-
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
-  };
+  const { openRegister } = useMenu();
   const perks = [
     {
       id: 1,
@@ -36,9 +31,6 @@ export default function HomePage() {
         text-[#0F2851]
       "
     >
-      {/* Registration Modal */}
-      {showPopup && <RegisterPopUp setShowPopup={setShowPopup} />}
-
      <div
   className="absolute inset-0"
   style={{
@@ -149,7 +141,7 @@ export default function HomePage() {
 
             {/* Register Button */}
             <button
-              onClick={togglePopup}
+              onClick={openRegister}
               className="
     absolute
     z-30

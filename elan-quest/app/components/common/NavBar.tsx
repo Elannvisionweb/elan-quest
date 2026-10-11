@@ -4,13 +4,23 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { useMenu } from "@/app/context/MenuContent";
 
 interface NavbarProps {
   onRegisterClick?: () => void;
 }
 
 export default function Navbar({ onRegisterClick }: NavbarProps) {
+  const { openRegister } = useMenu();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleRegister = () => {
+    if (onRegisterClick) {
+      onRegisterClick();
+    } else {
+      openRegister();
+    }
+  };
 
   return (
     <header className="w-full bg-[#B2D5FF] px-4 py-3 md:px-12 flex items-center justify-between shadow-sm relative z-50">
@@ -74,7 +84,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
         </Link>
 
         <button
-          onClick={onRegisterClick}
+          onClick={handleRegister}
           className="bg-[#FF7A7A] hover:bg-[#ff6565] text-white font-black text-sm px-4 py-2.5 rounded-full uppercase tracking-wider transition-all transform hover:scale-105 active:scale-95 shadow-sm cursor-pointer"
         >
           REGISTER NOW
@@ -84,7 +94,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
       {/* MOBILE CONTROLS */}
       <div className="flex md:hidden items-center gap-2">
         <button
-          onClick={onRegisterClick}
+          onClick={handleRegister}
           className="bg-[#FF7A7A] hover:bg-[#ff6565] text-white font-black text-[11px] px-3 py-1.5 rounded-full uppercase tracking-wider transition-all shadow-sm cursor-pointer"
         >
           REGISTER NOW
@@ -141,6 +151,16 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
           >
             CONTACT US
           </Link>
+
+          <button
+            onClick={() => {
+              setMobileMenuOpen(false);
+              handleRegister();
+            }}
+            className="mt-1 w-full bg-[#FF7A7A] hover:bg-[#ff6565] text-white font-black text-xs py-2.5 rounded-full uppercase tracking-wider transition-all shadow-sm text-center cursor-pointer"
+          >
+            REGISTER NOW
+          </button>
 
           <div className="flex items-center gap-4 pt-2">
             <a
