@@ -59,32 +59,29 @@ export default function SyllabusPage() {
   };
 
   return (
-    <main className="relative min-h-0 w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851]">
+    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] font-['Nexa_Text'] text-[#0F2851]">
       {/* =========================
           PATTERN BACKGROUND
           ========================= */}
-    <div
-        className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-     style={{
-  backgroundImage: "url('/pics/pattern.png')",
-  backgroundSize: "auto",
-  backgroundPosition: "center -80px",
-  backgroundRepeat: "repeat",
-}}
+      <div
+        className="pointer-events-none absolute inset-0 z-0 h-full w-full opacity-100"
+        style={{
+          backgroundImage: "url('/pics/pattern.png')",
+          backgroundSize: "auto",
+          backgroundPosition: "center -80px",
+          backgroundRepeat: "repeat",
+        }}
       />
 
       {/* =======================================================
-          HERO BANNER
+          HERO BANNER (PINNED / STAYS IN PLACE)
           ======================================================= */}
-      <section
+      <header
         className="
           relative
-          z-20
+          z-30
           w-full
-          h-[130px]
-          sm:h-[180px]
-          md:h-[260px]
-          lg:h-[280px]
+          shrink-0
           overflow-hidden
           shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]
         "
@@ -101,7 +98,7 @@ export default function SyllabusPage() {
         </div>
 
         {/* HERO CONTAINER */}
-        <div className="relative z-10 mx-auto flex h-full max-w-[1440px] items-center justify-between px-5 sm:px-8 md:px-16">
+        <div className="relative z-10 mx-auto flex h-[130px] sm:h-[180px] md:h-[260px] lg:h-[280px] max-w-[1440px] items-center justify-between px-5 sm:px-8 md:px-16">
           <h1
             className="
               shrink-0
@@ -143,12 +140,13 @@ export default function SyllabusPage() {
             />
           </div>
         </div>
-      </section>
+      </header>
 
       {/* =========================
-          PAGE CONTENT
+          PAGE CONTENT (SCROLLS INDEPENDENTLY)
           ========================= */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 md:px-[6.5%] md:py-12">
+      <main className="relative z-10 w-full flex-1 md:overflow-y-auto">
+        <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 md:px-[6.5%] md:py-12 pb-24">
         {/* Intro copy */}
         <div
           className="
@@ -294,7 +292,8 @@ export default function SyllabusPage() {
             );
           })}
         </div>
-      </div>
-    </main>
+        </div>
+      </main>
+    </div>
   );
 }

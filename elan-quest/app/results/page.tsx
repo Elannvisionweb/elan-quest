@@ -76,35 +76,18 @@ export default function ResultsPage() {
   ];
 
   return (
-    <motion.main
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851]"
-    >
+    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] font-['Nexa_Text'] text-[#0F2851]">
       {/* Pattern Background Overlay */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="pointer-events-none absolute inset-0 z-0 opacity-100"
         style={{
           backgroundImage: "url('/pics/pattern.png')",
           backgroundRepeat: "repeat",
         }}
       /> 
 
-      {/* Hero Header Banner */}
-      <section
-        className="
-          relative
-          z-20
-          w-full
-          h-[130px]
-          sm:h-[180px]
-          md:h-[260px]
-          lg:h-[280px]
-          overflow-hidden
-          shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]
-        "
-      >
+      {/* Hero Header Banner (Pinned / Stays in place) */}
+      <header className="relative z-30 w-full shrink-0 overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
         {/* USER FIGMA HERO BANNER BACKGROUND */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
@@ -117,7 +100,7 @@ export default function ResultsPage() {
         </div>
 
         {/* HERO CONTAINER */}
-        <div className="relative z-10 mx-auto flex h-full max-w-[1440px] items-center justify-between px-5 sm:px-8 md:px-16">
+        <div className="relative z-10 mx-auto flex h-[130px] sm:h-[180px] md:h-[260px] lg:h-[280px] max-w-[1440px] items-center justify-between px-5 sm:px-8 md:px-16">
           <h1
             className="
               shrink-0
@@ -160,48 +143,50 @@ export default function ResultsPage() {
             />
           </div>
         </div>
-      </section>
+      </header>
 
-      {/* Main Content Area */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-6 pb-20 space-y-12 sm:space-y-16">
-        
-        {/* Process Section */}
-        <section className="space-y-5">
-          <h2 className="font-['Nexa_Text'] text-[28px] sm:text-[34px] md:text-[42px] font-black uppercase tracking-wide text-[#0F2851] leading-tight">
-            PROCESS
-          </h2>
+      {/* Main Content Area (Scrolls independently) */}
+      <main className="relative z-10 w-full flex-1 md:overflow-y-auto">
+        <div className="w-full max-w-6xl mx-auto px-5 sm:px-6 py-10 pb-24 space-y-12 sm:space-y-16">
+          
+          {/* Process Section */}
+          <section className="space-y-5">
+            <h2 className="font-['Nexa_Text'] text-[28px] sm:text-[34px] md:text-[42px] font-black uppercase tracking-wide text-[#0F2851] leading-tight">
+              PROCESS
+            </h2>
 
-          <div className="space-y-4 text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
-            {processItems.map((item) => (
-              <p key={item.id} className="leading-relaxed">
-                {item.content}
-              </p>
-            ))}
-          </div>
-        </section>
+            <div className="space-y-4 text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              {processItems.map((item) => (
+                <p key={item.id} className="leading-relaxed">
+                  {item.content}
+                </p>
+              ))}
+            </div>
+          </section>
 
-        {/* Awards & Prizes Section */}
-        <section className="space-y-5">
-          <h2 className="font-['Nexa_Text'] text-[28px] sm:text-[34px] md:text-[42px] font-black uppercase tracking-wide text-[#0F2851] leading-tight">
-            AWARDS &amp; PRIZES
-          </h2>
+          {/* Awards & Prizes Section */}
+          <section className="space-y-5">
+            <h2 className="font-['Nexa_Text'] text-[28px] sm:text-[34px] md:text-[42px] font-black uppercase tracking-wide text-[#0F2851] leading-tight">
+              AWARDS &amp; PRIZES
+            </h2>
 
-          <p className="text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111] font-medium">
-            The participating students stand to gain many prizes and goodies, as
-            well as invaluable experience by participating in the Nexus QUEST
-            examination:
-          </p>
+            <p className="text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111] font-medium">
+              The participating students stand to gain many prizes and goodies, as
+              well as invaluable experience by participating in the Nexus QUEST
+              examination:
+            </p>
 
-          <div className="space-y-4 text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
-            {awardsList.map((item) => (
-              <p key={item.id} className="leading-relaxed">
-                {item.content}
-              </p>
-            ))}
-          </div>
-        </section>
+            <div className="space-y-4 text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              {awardsList.map((item) => (
+                <p key={item.id} className="leading-relaxed">
+                  {item.content}
+                </p>
+              ))}
+            </div>
+          </section>
 
-      </div>
-    </motion.main>
+        </div>
+      </main>
+    </div>
   );
 }

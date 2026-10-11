@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 
 export default function TermsPage() {
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851] font-['Nexa_Text']">
+    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] text-[#0F2851] font-['Nexa_Text']">
       {/* ──────────────── 0. BACKGROUND PATTERN LAYER ──────────────── */}
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-100"
@@ -49,8 +49,9 @@ export default function TermsPage() {
         </div>
       </header>
 
-      {/* ──────────────── 2. TERMS CONTENT ──────────────── */}
-      <div className="relative z-10 mx-auto w-full max-w-[1000px] px-6 py-10 pb-24 md:px-12">
+      {/* ──────────────── 2. TERMS CONTENT (SCROLLABLE) ──────────────── */}
+      <main className="relative z-10 w-full flex-1 md:overflow-y-auto">
+        <div className="mx-auto w-full max-w-[1000px] px-6 py-10 pb-24 md:px-12">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -423,5 +424,6 @@ export default function TermsPage() {
         </motion.div>
       </div>
     </main>
+  </div>
   );
 }

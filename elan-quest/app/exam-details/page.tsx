@@ -4,34 +4,18 @@ import Image from "next/image";
 
 export default function Results() {
   return (
-<main
-  className="relative w-full overflow-x-hidden bg-[#F0ECCF] text-[#092B55]"
-style={{
-    backgroundImage: "url('/pics/pattern.png')",
-    backgroundSize: "auto",
-    backgroundPosition: "center top", 
-    backgroundRepeat: "repeat",
-  }}
->
-  <div className="relative z-10">
-        {/* =======================================================
-            HERO
-            DESKTOP: 515px
-            MOBILE: ~220px
-        ======================================================= */}
-        <section
-          className="
-            relative
-            z-20
-            w-full
-            h-[130px]
-            sm:h-[180px]
-            md:h-[260px]
-            lg:h-[280px]
-            overflow-hidden
-            shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]
-          "
-        >
+    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] font-['Nexa_Text'] text-[#092B55]">
+      {/* Pattern Background Overlay */}
+      <div
+        className="pointer-events-none absolute inset-0 z-0 opacity-100"
+        style={{
+          backgroundImage: "url('/pics/pattern.png')",
+          backgroundRepeat: "repeat",
+        }}
+      />
+
+      {/* Hero Header Banner (Pinned / Stays in place) */}
+      <header className="relative z-30 w-full shrink-0 overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
           {/* USER FIGMA HERO BANNER BACKGROUND */}
           <div className="absolute inset-0 z-0 pointer-events-none">
             <Image
@@ -86,12 +70,11 @@ style={{
               />
             </div>
           </div>
-        </section>
+      </header>
 
-        {/* =======================================================
-            CONTENT
-        ======================================================= */}
-     <div className="relative mx-auto min-h-0 md:min-h-[1800px] w-full max-w-[1440px]">
+      {/* Main Content Area (Scrolls independently) */}
+      <main className="relative z-10 w-full flex-1 md:overflow-y-auto">
+        <div className="relative mx-auto min-h-0 md:min-h-[1850px] w-full max-w-[1440px] pb-24">
           {/* =====================================================
               DESKTOP TABLE
           ===================================================== */}
@@ -416,7 +399,7 @@ style={{
             </div>
           </section>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

@@ -11,7 +11,7 @@ const CONTACTS = [
 
 export default function ContactUs() {
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851] font-['Nexa_Text']">
+    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] text-[#0F2851] font-['Nexa_Text']">
       {/* ──────────────── 0. BACKGROUND PATTERN LAYER ──────────────── */}
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-100"
@@ -42,30 +42,32 @@ export default function ContactUs() {
         </div>
       </header>
 
-      {/* ──────────────── 2. PAGE CONTENT ──────────────── */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 md:px-[6.5%] md:py-16">
-        {/* =========================
-            CONTACTS GRID
-            ========================= */}
-        <div className="grid grid-cols-1 gap-x-16 gap-y-12 sm:grid-cols-2 md:gap-x-24 md:gap-y-16 lg:grid-cols-3">
-          {CONTACTS.map((contact) => (
-            <div
-              key={contact.name}
-              className="border-b border-[#0F2851]/15 pb-6"
-            >
-              <p className="font-['Nexa_Text'] text-xl font-bold sm:text-2xl md:text-3xl text-[#0F2851]">
-                {contact.name}
-              </p>
-              <a
-                href={`tel:${contact.number.replace(/\s/g, "")}`}
-                className="mt-3 block font-['Nexa_Text'] text-base font-medium sm:text-lg md:text-xl text-[#111111] hover:text-[#0F2851] transition-colors"
+      {/* ──────────────── 2. PAGE CONTENT (SCROLLABLE) ──────────────── */}
+      <main className="relative z-10 w-full flex-1 md:overflow-y-auto">
+        <div className="mx-auto w-full max-w-[1440px] px-6 py-10 pb-24 sm:px-10 md:px-[6.5%] md:py-16">
+          {/* =========================
+              CONTACTS GRID
+              ========================= */}
+          <div className="grid grid-cols-1 gap-x-16 gap-y-12 sm:grid-cols-2 md:gap-x-24 md:gap-y-16 lg:grid-cols-3">
+            {CONTACTS.map((contact) => (
+              <div
+                key={contact.name}
+                className="border-b border-[#0F2851]/15 pb-6"
               >
-                {contact.number}
-              </a>
-            </div>
-          ))}
+                <p className="font-['Nexa_Text'] text-xl font-bold sm:text-2xl md:text-3xl text-[#0F2851]">
+                  {contact.name}
+                </p>
+                <a
+                  href={`tel:${contact.number.replace(/\s/g, "")}`}
+                  className="mt-3 block font-['Nexa_Text'] text-base font-medium sm:text-lg md:text-xl text-[#111111] hover:text-[#0F2851] transition-colors"
+                >
+                  {contact.number}
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
