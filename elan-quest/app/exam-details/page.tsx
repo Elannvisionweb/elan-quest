@@ -26,11 +26,9 @@ style={{
             w-full
             h-[130px]
             sm:h-[180px]
-            md:h-[515px]
+            md:h-[260px]
+            lg:h-[280px]
             overflow-hidden
-            px-5
-            sm:px-8
-            md:px-0
             shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]
           "
         >
@@ -45,37 +43,21 @@ style={{
             />
           </div>
 
-          {/* DESKTOP HEADING - UNCHANGED */}
-          <h1
-            className="
-              absolute
-              left-[146px]
-              top-[189px]
-              z-10
-              hidden
-              font-['Nexa_Text']
-              text-[91px]
-              font-black
-              uppercase
-              leading-none
-              text-[#092B55]
-              md:block
-            "
-          >
-            EXAM DETAILS
-          </h1>
-
-          {/* MOBILE HERO CONTAINER */}
-          <div className="relative z-10 flex h-full w-full items-center justify-between md:hidden">
+          {/* HERO CONTAINER */}
+          <div className="relative z-10 mx-auto flex h-full max-w-[1440px] items-center justify-between px-5 sm:px-8 md:px-16">
             <h1
               className="
+                shrink-0
                 font-['Nexa_Text']
                 text-[28px]
+                sm:text-[38px]
+                md:text-[56px]
+                lg:text-[64px]
                 font-black
                 uppercase
-                leading-tight
+                tracking-tight
                 text-[#092B55]
-                sm:text-[40px]
+                leading-none
               "
             >
               EXAM DETAILS
@@ -86,9 +68,13 @@ style={{
                 relative
                 h-[110px]
                 w-[110px]
-                flex-shrink-0
+                shrink-0
                 sm:h-[150px]
                 sm:w-[150px]
+                md:h-[220px]
+                md:w-[220px]
+                lg:h-[250px]
+                lg:w-[250px]
               "
             >
               <Image
@@ -96,31 +82,9 @@ style={{
                 alt="Exam details"
                 fill
                 priority
-                className="object-contain"
+                className="object-contain object-right"
               />
             </div>
-          </div>
-
-          {/* DESKTOP IMAGE - UNCHANGED */}
-          <div
-            className="
-              absolute
-              left-[887px]
-              top-[48px]
-              z-10
-              hidden
-              h-[483px]
-              w-[461px]
-              md:block
-            "
-          >
-            <Image
-              src="/pics/exam.png"
-              alt="Exam details"
-              fill
-              priority
-              className="object-contain"
-            />
           </div>
         </section>
 

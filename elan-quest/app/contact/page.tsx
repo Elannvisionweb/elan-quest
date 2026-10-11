@@ -35,8 +35,8 @@ export default function ContactUs() {
           />
         </div>
 
-        <div className="relative z-10 mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
-          <h1 className="shrink-0 font-['Nexa_Text'] text-3xl font-black uppercase tracking-tight text-[#092B55] sm:text-4xl md:text-5xl">
+        <div className="relative z-10 mx-auto flex h-[130px] sm:h-[180px] md:h-[260px] lg:h-[280px] max-w-[1440px] items-center justify-between px-5 sm:px-8 md:px-16">
+          <h1 className="shrink-0 font-['Nexa_Text'] text-[28px] sm:text-[38px] md:text-[56px] lg:text-[64px] font-black uppercase tracking-tight text-[#092B55] leading-none">
             CONTACT US
           </h1>
         </div>

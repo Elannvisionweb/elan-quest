@@ -43,14 +43,14 @@ export default function AboutPage() {
           />
         </div>
 
-        <div className="relative z-10 mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
+        <div className="relative z-10 mx-auto flex h-[130px] sm:h-[180px] md:h-[260px] lg:h-[280px] max-w-[1440px] items-center justify-between px-5 sm:px-8 md:px-16">
           {/* ABOUT US TITLE */}
-          <h1 className="shrink-0 text-3xl font-black uppercase tracking-tight text-[#092B55] sm:text-4xl md:text-5xl">
+          <h1 className="shrink-0 font-['Nexa_Text'] text-[28px] sm:text-[38px] md:text-[56px] lg:text-[64px] font-black uppercase tracking-tight text-[#092B55] leading-none">
             ABOUT US
           </h1>
 
           {/* MEDAL IMAGE */}
-          <div className="relative h-[80px] w-[120px] shrink-0 sm:h-[100px] sm:w-[160px] md:h-[160px] md:w-[400px]">
+          <div className="relative h-[110px] w-[120px] shrink-0 sm:h-[150px] sm:w-[170px] md:h-[220px] md:w-[260px] lg:h-[250px] lg:w-[300px]">
             <Image
               src="/pics/medal.png"
               alt="Hand holding medal"
