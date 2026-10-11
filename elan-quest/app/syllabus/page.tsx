@@ -189,19 +189,20 @@ export default function SyllabusPage() {
         <div
           className="
             max-w-[1000px]
+            font-['Nexa_Text']
             text-sm
-            font-medium
+            font-normal
             leading-relaxed
-            text-[#0F2851]
+            text-[#111111]
             sm:text-base
-            md:text-lg
+            md:text-[17px]
           "
         >
-          Nexus QUEST spans four key academic areas -{" "}
-          <span className="font-bold">Logical Reasoning</span>,{" "}
-          <span className="font-bold">Mathematics</span>,{" "}
-          <span className="font-bold">Physics</span>, and{" "}
-          <span className="font-bold">Chemistry</span>, testing students&#39;
+          Nexus QUEST spans four key academic areas —{" "}
+          <strong className="font-bold text-[#0F2851]">Logical Reasoning</strong>,{" "}
+          <strong className="font-bold text-[#0F2851]">Mathematics</strong>,{" "}
+          <strong className="font-bold text-[#0F2851]">Physics</strong>, and{" "}
+          <strong className="font-bold text-[#0F2851]">Chemistry</strong>, testing students&#39;
           theoretical knowledge, problem-solving capabilities, and real-world
           application of basic concepts. The examination balances
           curriculum-aligned topics with analytical reasoning, delivering a
@@ -211,7 +212,7 @@ export default function SyllabusPage() {
         {/* =========================
             CLASS TABS (desktop)
             ========================= */}
-        <div className="mt-10 hidden md:flex gap-8 border-b border-[#0F2851]/30 w-full">
+        <div className="mt-10 hidden md:flex gap-8 border-b border-[#0F2851]/30 w-full font-['Nexa_Text']">
           {CLASS_TABS.map((tab, i) => (
             <button
               key={tab.classNum}
@@ -230,7 +231,7 @@ export default function SyllabusPage() {
         {/* =========================
             CLASS DROPDOWNS (mobile)
             ========================= */}
-        <div className="mt-8 w-full space-y-4 md:hidden">
+        <div className="mt-8 w-full space-y-4 md:hidden font-['Nexa_Text']">
           {CLASS_TABS.map((classItem) => (
             <div
               key={classItem.classNum}
@@ -262,7 +263,7 @@ export default function SyllabusPage() {
                     return (
                       <div
                         key={rowIdx}
-                        className="grid h-fit w-full grid-cols-[1fr_16px_1.4fr] items-center gap-2 px-3.5 py-3.5 sm:px-5 sm:py-6"
+                        className="grid h-fit w-full grid-cols-[1fr_1.5fr] items-center gap-3 px-4 py-3.5 sm:px-6 sm:py-5"
                         style={{
                           background: `rgba(240, 236, 207, ${bgOpacity})`,
                           color: fontColor,
@@ -270,17 +271,14 @@ export default function SyllabusPage() {
                       >
                         <div
                           className={`text-left text-sm sm:text-base leading-relaxed ${
-                            rowIdx === 0 ? "font-bold" : "font-medium"
+                            rowIdx === 0 ? "font-bold uppercase tracking-wide" : "font-medium"
                           }`}
                         >
                           {item.col1}
                         </div>
-                        <div className="flex items-center justify-center text-xs">
-                          •
-                        </div>
                         <div
                           className={`text-left text-xs sm:text-sm leading-relaxed ${
-                            rowIdx === 0 ? "font-bold" : "font-medium"
+                            rowIdx === 0 ? "font-bold uppercase tracking-wide" : "font-medium"
                           }`}
                         >
                           {item.col2}
@@ -297,7 +295,7 @@ export default function SyllabusPage() {
         {/* =========================
             SYLLABUS TABLE (desktop)
             ========================= */}
-        <div className="relative mt-8 hidden w-full auto-rows-max md:grid">
+        <div className="relative mt-8 hidden w-full auto-rows-max md:grid font-['Nexa_Text']">
           {getSyllabusData(activeNav + 5).map((item, rowIdx) => {
             const bgOpacity =
               rowIdx === 0 ? 1 : Math.max(0, 0.5 - 0.1 * rowIdx);
@@ -306,7 +304,7 @@ export default function SyllabusPage() {
             return (
               <div
                 key={rowIdx}
-                className="grid h-fit w-full grid-cols-[1fr_30px_3fr] items-center gap-4 px-6 py-6"
+                className="grid h-fit w-full grid-cols-[1fr_2.5fr] items-center gap-6 px-8 py-5"
                 style={{
                   background: `rgba(15, 40, 81, ${
                     rowIdx === 0 ? 1 : bgOpacity * 0.15
@@ -315,15 +313,14 @@ export default function SyllabusPage() {
                 }}
               >
                 <div
-                  className={`text-center text-lg leading-relaxed ${
+                  className={`text-left text-base lg:text-lg leading-relaxed ${
                     rowIdx === 0 ? "font-bold uppercase tracking-wide" : "font-medium"
                   }`}
                 >
                   {item.col1}
                 </div>
-                <div className="flex items-center justify-center">•</div>
                 <div
-                  className={`text-center text-lg leading-relaxed ${
+                  className={`text-left text-base lg:text-lg leading-relaxed ${
                     rowIdx === 0 ? "font-bold uppercase tracking-wide" : "font-medium"
                   }`}
                 >

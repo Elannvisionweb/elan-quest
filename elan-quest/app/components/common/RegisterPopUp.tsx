@@ -97,7 +97,7 @@ export default function RegisterPopUp({ setShowPopup }: PopUpProps = {}) {
         <div className="relative z-10 flex items-center justify-between gap-2">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] sm:text-xs font-black tracking-widest uppercase bg-[#FF7A7A] text-white shadow-sm">
             <Sparkles className="w-3 h-3 text-white" />
-            NEXUS QUEST • 2026
+            NEXUS QUEST 2026
           </span>
 
           <button

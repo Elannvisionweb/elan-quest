@@ -126,7 +126,7 @@ export default function Menu({ closeMenu, menuOpen }: Props) {
                     }`}
                     onClick={closeMenu}
                   >
-                    <li>{item.title}</li>
+                    <span>{item.title}</span>
                   </Link>
                   {item.comingSoon ? (
                     <span className="ml-auto text-xs border border-[var(--surface-foreground)] rounded-full px-2 py-0.5 opacity-70">

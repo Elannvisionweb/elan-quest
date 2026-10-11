@@ -206,6 +206,7 @@ md:text-[clamp(18px,1.6vw,23px)]
             <h2
               className="
                 mb-5
+                font-['Nexa_Text']
                 text-[34px]
                 font-black
                 uppercase
@@ -287,6 +288,7 @@ md:text-[clamp(18px,1.6vw,23px)]
             <h2
               className="
                 mb-5
+                font-['Nexa_Text']
                 text-[34px]
                 font-black
                 uppercase
@@ -355,6 +357,7 @@ md:text-[clamp(18px,1.6vw,23px)]
             <h2
               className="
                 mb-5
+                font-['Nexa_Text']
                 text-[34px]
                 font-black
                 uppercase
@@ -406,6 +409,7 @@ md:text-[clamp(18px,1.6vw,23px)]
             <h2
               className="
                 mb-5
+                font-['Nexa_Text']
                 text-[34px]
                 font-black
                 uppercase
@@ -464,6 +468,7 @@ md:text-[clamp(18px,1.6vw,23px)]
             <h2
               className="
                 mb-6
+                font-['Nexa_Text']
                 text-[34px]
                 font-black
                 uppercase
@@ -537,6 +542,7 @@ md:text-[clamp(18px,1.6vw,23px)]
             <h2
               className="
                 mb-6
+                font-['Nexa_Text']
                 text-[34px]
                 font-black
                 uppercase
@@ -548,65 +554,47 @@ md:text-[clamp(18px,1.6vw,23px)]
                 leading-[1.08]
               "
             >
-              Rewards &amp; Opportunities
+              REWARDS &amp; OPPORTUNITIES
             </h2>
 
-            <ul className="space-y-5 text-[18px] font-normal leading-[1.5] text-[#0F2851] sm:text-[20px] md:text-[24px] lg:text-[27px]">
-              <li className="flex gap-3 items-start">
-                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
-                <p>
-                  <span className="font-bold">Merit Recognition:</span>{" "}
-                  Top 3 achievers from every class in each school will receive Merit
-                  Medals and Certificates of Recognition.
-                </p>
-              </li>
+            <div className="space-y-5 text-[18px] font-normal leading-[1.5] text-[#0F2851] sm:text-[20px] md:text-[24px] lg:text-[27px]">
+              <p>
+                <strong className="font-bold">Merit Recognition:</strong>{" "}
+                Top 3 achievers from every class in each school will receive Merit
+                Medals and Certificates of Recognition.
+              </p>
 
-              <li className="flex gap-3 items-start">
-                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
-                <p>
-                  <span className="font-bold">Excellence Rewards:</span>{" "}
-                  The Top 10 highest scorers in each class will receive Excellence
-                  Medals, exclusive goodies, and rewards.
-                </p>
-              </li>
+              <p>
+                <strong className="font-bold">Excellence Rewards:</strong>{" "}
+                The Top 10 highest scorers in each class will receive Excellence
+                Medals, exclusive goodies, and rewards.
+              </p>
 
-              <li className="flex gap-3 items-start">
-                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
-                <p>
-                  <span className="font-bold">Special School Incentive:</span>{" "}
-                  Schools with 200+ registered students will receive Elan &amp; nVision
-                  festival passes for their top 2–3 performers at IIT Hyderabad.
-                </p>
-              </li>
+              <p>
+                <strong className="font-bold">Special School Incentive:</strong>{" "}
+                Schools with 200+ registered students will receive Elan &amp; nVision
+                festival passes for their top 2–3 performers at IIT Hyderabad.
+              </p>
 
-              <li className="flex gap-3 items-start">
-                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
-                <p>
-                  <span className="font-bold">IIT Hyderabad Campus Experience:</span>{" "}
-                  Winners will get an opportunity to visit IIT Hyderabad and explore
-                  its cutting-edge laboratories and state-of-the-art facilities through
-                  guided tours.
-                </p>
-              </li>
+              <p>
+                <strong className="font-bold">IIT Hyderabad Campus Experience:</strong>{" "}
+                Winners will get an opportunity to visit IIT Hyderabad and explore
+                its cutting-edge laboratories and state-of-the-art facilities through
+                guided tours.
+              </p>
 
-              <li className="flex gap-3 items-start">
-                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
-                <p>
-                  <span className="font-bold">Student Interaction &amp; Mentorship:</span>{" "}
-                  Participants will interact with current IIT Hyderabad students,
-                  gaining valuable insights, mentorship, and lasting connections.
-                </p>
-              </li>
+              <p>
+                <strong className="font-bold">Student Interaction &amp; Mentorship:</strong>{" "}
+                Participants will interact with current IIT Hyderabad students,
+                gaining valuable insights, mentorship, and lasting connections.
+              </p>
 
-              <li className="flex gap-3 items-start">
-                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#0F2851]" />
-                <p>
-                  <span className="font-bold">Grand Award Celebration:</span>{" "}
-                  Winners will be felicitated at a grand award ceremony at IIT
-                  Hyderabad, with media coverage and recognition on official platforms.
-                </p>
-              </li>
-            </ul>
+              <p>
+                <strong className="font-bold">Grand Award Celebration:</strong>{" "}
+                Winners will be felicitated at a grand award ceremony at IIT
+                Hyderabad, with media coverage and recognition on official platforms.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -629,6 +617,7 @@ md:text-[clamp(18px,1.6vw,23px)]
             <h2
               className="
                 mb-5
+                font-['Nexa_Text']
                 text-[34px]
                 font-black
                 uppercase

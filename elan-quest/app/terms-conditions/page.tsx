@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { motion, Variants } from "framer-motion";
-import SectionHeading from "../components/common/SectionHeading";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -9,8 +9,8 @@ const fadeInUp: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.15,
-      duration: 0.6,
+      delay: i * 0.1,
+      duration: 0.5,
       ease: [0.4, 0, 0.2, 1],
     },
   }),
@@ -18,301 +18,408 @@ const fadeInUp: Variants = {
 
 export default function TermsPage() {
   return (
-    <main className="relative min-h-0 w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851] pt-16">
-
-      {/* =========================
-          PATTERN BACKGROUND
-          ========================= */}
+    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851] font-['Nexa_Text']">
+      {/* ──────────────── 0. BACKGROUND PATTERN LAYER ──────────────── */}
       <div
-        className="absolute inset-0 z-0 pointer-events-none"
+        className="pointer-events-none absolute inset-0 z-0 opacity-100"
         style={{
-          backgroundImage: "url('/pics/patternfinal.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-          backgroundRepeat: "repeat-y",
+          backgroundImage: "url('/pics/pattern.png')",
+          backgroundSize: "auto",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center",
         }}
       />
 
-      <div className="relative z-10 space-y-20">
-        {/* Header */}
+      {/* ──────────────── 1. HERO BANNER ──────────────── */}
+      <header className="relative z-30 w-full shrink-0 overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/pics/exam-hero-bg.png"
+            alt="Terms & Conditions Hero Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
+          <h1 className="shrink-0 font-['Nexa_Text'] text-3xl font-black uppercase tracking-tight text-[#092B55] sm:text-4xl md:text-5xl">
+            TERMS &amp; CONDITIONS
+          </h1>
+        </div>
+      </header>
+
+      {/* ──────────────── 2. TERMS CONTENT ──────────────── */}
+      <div className="relative z-10 mx-auto w-full max-w-[1000px] px-6 py-10 pb-24 md:px-12">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
-          custom={0}
-          className="px-6 md:px-20"
+          custom={1}
+          className="space-y-10"
         >
-          <motion.div variants={fadeInUp} custom={1}>
-            <SectionHeading title="Terms & Conditions" />
-          </motion.div>
-        </motion.div>
+          {/* Section 1 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              1. Acceptance of Terms
+            </h2>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                By registering for, participating in, or accessing any part of Nexus
+                QUEST organized by Elan &amp; nVision, you agree to be bound by
+                these Terms and Conditions. If you do not agree to these Terms, you
+                may not participate in the Olympiad.
+              </p>
+            </div>
+          </section>
 
-        {/* Terms Content */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          custom={2}
-          className="px-6 md:px-20 max-w-[1000px] mx-auto leading-relaxed text-lg space-y-6"
-        >
-          <p className="font-bold text-2xl">1. Acceptance of Terms</p>
-          <p>
-            By registering for, participating in, or accessing any part of Nexus
-            QUEST organized by Elan &amp; nVision, you agree to be bound by
-            these Terms and Conditions. If you do not agree to these Terms, you
-            may not participate in the Olympiad.
-          </p>
+          {/* Section 2 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              2. Participant Conduct
+            </h2>
+            
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851]">
+              2.1 Academic Integrity
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                All work must be original and completed independently during the
+                online examination.
+              </p>
+              <p>
+                Any form of cheating, plagiarism, or academic dishonesty will
+                result in immediate disqualification.
+              </p>
+              <p>
+                Use of unauthorized materials, assistance, or communication during
+                the online exam is strictly prohibited.
+              </p>
+              <p>
+                Participants must comply with all online proctoring requirements
+                and examination protocols.
+              </p>
+            </div>
 
-          <p className="font-bold text-2xl">2. Participant Conduct</p>
-          <p className="font-semibold text-xl">2.1 Academic Integrity</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              All work must be original and completed independently during the
-              online examination.
-            </li>
-            <li>
-              Any form of cheating, plagiarism, or academic dishonesty will
-              result in immediate disqualification.
-            </li>
-            <li>
-              Use of unauthorized materials, assistance, or communication during
-              the online exam is strictly prohibited.
-            </li>
-            <li>
-              Participants must comply with all online proctoring requirements
-              and examination protocols.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              2.2 Behavioral Standards
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Participants must maintain respectful and professional conduct
+                throughout all interactions.
+              </p>
+              <p>
+                Disruptive, inappropriate, or disrespectful behavior may result in
+                disqualification.
+              </p>
+              <p>
+                Participants represent their schools and communities and are
+                expected to uphold these standards.
+              </p>
+              <p>
+                Any form of harassment, discrimination, or misconduct will not be
+                tolerated.
+              </p>
+            </div>
+          </section>
 
-          <p className="font-semibold text-xl">2.2 Behavioral Standards</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Participants must maintain respectful and professional conduct
-              throughout all interactions.
-            </li>
-            <li>
-              Disruptive, inappropriate, or disrespectful behavior may result in
-              disqualification.
-            </li>
-            <li>
-              Participants represent their schools and communities and are
-              expected to uphold these standards.
-            </li>
-            <li>
-              Any form of harassment, discrimination, or misconduct will not be
-              tolerated.
-            </li>
-          </ul>
+          {/* Section 3 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              3. Participant Responsibilities
+            </h2>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Provide accurate and truthful information during registration.
+              </p>
+              <p>
+                Comply with all online examination rules and procedures.
+              </p>
+              <p>
+                Maintain confidentiality of examination content.
+              </p>
+              <p>
+                Ensure technical preparedness for online participation with stable
+                internet connection and compatible devices.
+              </p>
+            </div>
+          </section>
 
-          <p className="font-bold text-2xl">3. Participant Responsibilities</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Provide accurate and truthful information during registration.
-            </li>
-            <li>Comply with all online examination rules and procedures.</li>
-            <li>Maintain confidentiality of examination content.</li>
-            <li>
-              Ensure technical preparedness for online participation with stable
-              internet connection and compatible devices.
-            </li>
-          </ul>
+          {/* Section 4 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              4. Intellectual Property
+            </h2>
+            
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851]">
+              4.1 Examination Content
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                All examination questions, materials, and content are proprietary
+                to Elan &amp; nVision.
+              </p>
+              <p>
+                Participants may not reproduce, share, or distribute examination
+                content in any form.
+              </p>
+              <p>
+                Violation of intellectual property rights may result in legal
+                action and disqualification.
+              </p>
+            </div>
 
-          <p className="font-bold text-2xl">4. Intellectual Property</p>
-          <p className="font-semibold text-xl">4.1 Examination Content</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              All examination questions, materials, and content are proprietary
-              to Elan &amp; nVision.
-            </li>
-            <li>
-              Participants may not reproduce, share, or distribute examination
-              content in any form.
-            </li>
-            <li>
-              Violation of intellectual property rights may result in legal
-              action and disqualification.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              4.2 Participant Information
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Participants retain rights to their personal achievements and
+                academic records.
+              </p>
+              <p>
+                By participating, participants grant limited rights to use their
+                names and achievements for promotional purposes related to Nexus
+                QUEST and Elan &amp; nVision.
+              </p>
+            </div>
+          </section>
 
-          <p className="font-semibold text-xl">4.2 Participant Information</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Participants retain rights to their personal achievements and
-              academic records.
-            </li>
-            <li>
-              By participating, participants grant limited rights to use their
-              names and achievements for promotional purposes related to Nexus
-              QUEST and Elan &amp; nVision.
-            </li>
-          </ul>
+          {/* Section 5 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              5. Privacy and Data Protection
+            </h2>
+            
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851]">
+              5.1 Information Collection
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Personal information is collected only for examination
+                administration and communication.
+              </p>
+              <p>
+                Data is protected in accordance with applicable privacy laws and
+                institutional policies.
+              </p>
+              <p>
+                Information may be shared with schools for coordination purposes
+                where applicable.
+              </p>
+            </div>
 
-          <p className="font-bold text-2xl">5. Privacy and Data Protection</p>
-          <p className="font-semibold text-xl">5.1 Information Collection</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Personal information is collected only for examination
-              administration and communication.
-            </li>
-            <li>
-              Data is protected in accordance with applicable privacy laws and
-              institutional policies.
-            </li>
-            <li>
-              Information may be shared with schools for coordination purposes
-              where applicable.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              5.2 Data Usage
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Personal information will not be used for commercial purposes
+                without explicit consent.
+              </p>
+              <p>
+                Participants may request access to or correction of their personal
+                information.
+              </p>
+              <p>
+                Marketing communications require separate opt-in consent.
+              </p>
+            </div>
+          </section>
 
-          <p className="font-semibold text-xl">5.2 Data Usage</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Personal information will not be used for commercial purposes
-              without explicit consent.
-            </li>
-            <li>
-              Participants may request access to or correction of their personal
-              information.
-            </li>
-            <li>Marketing communications require separate opt-in consent.</li>
-          </ul>
+          {/* Section 6 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              6. Liability and Disclaimers
+            </h2>
+            
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851]">
+              6.1 Technical Issues
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Participants are responsible for ensuring stable internet
+                connection and compatible devices for the online examination.
+              </p>
+              <p>
+                Elan &amp; nVision is not liable for technical failures on the
+                participant&apos;s end.
+              </p>
+              <p>
+                System-wide technical issues will be addressed fairly with
+                appropriate remedial measures.
+              </p>
+            </div>
 
-          <p className="font-bold text-2xl">6. Liability and Disclaimers</p>
-          <p className="font-semibold text-xl">6.1 Technical Issues</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Participants are responsible for ensuring stable internet
-              connection and compatible devices for the online examination.
-            </li>
-            <li>
-              Elan &amp; nVision is not liable for technical failures on the
-              participant&apos;s end.
-            </li>
-            <li>
-              System-wide technical issues will be addressed fairly with
-              appropriate remedial measures.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              6.2 Limitation of Liability
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Participation is voluntary and at the participant&apos;s own risk.
+              </p>
+              <p>
+                Elan &amp; nVision&apos;s liability is limited to the extent
+                permitted by applicable law.
+              </p>
+              <p>
+                Prize distribution will be conducted during Elan &amp; nVision at
+                IIT Hyderabad.
+              </p>
+            </div>
+          </section>
 
-          <p className="font-semibold text-xl">6.2 Limitation of Liability</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Participation is voluntary and at the participant&apos;s own risk.
-            </li>
-            <li>
-              Elan &amp; nVision&apos;s liability is limited to the extent
-              permitted by applicable law.
-            </li>
-            <li>
-              Prize distribution will be conducted during Elan &amp; nVision at
-              IIT Hyderabad.
-            </li>
-          </ul>
+          {/* Section 7 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              7. Modifications and Termination
+            </h2>
+            
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851]">
+              7.1 Changes to Terms
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Elan &amp; nVision reserves the right to modify these Terms with
+                reasonable notice.
+              </p>
+              <p>
+                Continued participation after notification constitutes acceptance
+                of changes.
+              </p>
+              <p>
+                Significant changes will be communicated through official
+                channels.
+              </p>
+            </div>
 
-          <p className="font-bold text-2xl">8. Modifications and Termination</p>
-          <p className="font-semibold text-xl">8.1 Changes to Terms</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Elan &amp; nVision reserves the right to modify these Terms with
-              reasonable notice.
-            </li>
-            <li>
-              Continued participation after notification constitutes acceptance
-              of changes.
-            </li>
-            <li>
-              Significant changes will be communicated through official
-              channels.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              7.2 Payment and Registration
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                All payments and registration fees, once made, are non-refundable.
+              </p>
+              <p>
+                Registration confirmations are final and cannot be cancelled for
+                refunds.
+              </p>
+            </div>
 
-          <p className="font-semibold text-xl">8.2 Payment and Registration</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              All payments and registration fees, once made, are non-refundable.
-            </li>
-            <li>
-              Registration confirmations are final and cannot be cancelled for
-              refunds.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              7.3 Disqualification
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                Elan &amp; nVision reserves the right to disqualify participants
+                for violation of these Terms.
+              </p>
+              <p>
+                Disqualification decisions are final and not subject to appeal.
+              </p>
+              <p>
+                Disqualified participants forfeit all rights to awards and
+                recognition.
+              </p>
+            </div>
+          </section>
 
-          <p className="font-semibold text-xl">8.3 Disqualification</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Elan &amp; nVision reserves the right to disqualify participants
-              for violation of these Terms.
-            </li>
-            <li>
-              Disqualification decisions are final and not subject to appeal.
-            </li>
-            <li>
-              Disqualified participants forfeit all rights to awards and
-              recognition.
-            </li>
-          </ul>
+          {/* Section 8 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              8. Communication
+            </h2>
+            
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851]">
+              8.1 Official Channels
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                All official communications will be made through registered email
+                addresses and the official website.
+              </p>
+              <p>
+                Participants are responsible for monitoring these channels and
+                keeping contact information updated.
+              </p>
+              <p>
+                Social media channels are supplementary and not primary means of
+                official communication.
+              </p>
+            </div>
 
-          <p className="font-bold text-2xl">9. Communication</p>
-          <p className="font-semibold text-xl">9.1 Official Channels</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              All official communications will be made through registered email
-              addresses and the official website.
-            </li>
-            <li>
-              Participants are responsible for monitoring these channels and
-              keeping contact information updated.
-            </li>
-            <li>
-              Social media channels are supplementary and not primary means of
-              official communication.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              8.2 Contact Information
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                General inquiries:{" "}
+                <a
+                  href="mailto:elan.nvision@sa.iith.ac.in"
+                  className="font-bold text-[#0F2851] underline"
+                >
+                  elan.nvision@sa.iith.ac.in
+                </a>
+              </p>
+              <p>
+                Outreach:{" "}
+                <a
+                  href="mailto:elan.nvision.outreach@sa.iith.ac.in"
+                  className="font-bold text-[#0F2851] underline"
+                >
+                  elan.nvision.outreach@sa.iith.ac.in
+                </a>
+              </p>
+            </div>
+          </section>
 
-          <p className="font-semibold text-xl">9.2 Contact Information</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>General inquiries: elan.nvision@sa.iith.ac.in</li>
-            <li>Outreach: elan.nvision.outreach@sa.iith.ac.in</li>
-          </ul>
+          {/* Section 9 */}
+          <section className="space-y-4">
+            <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851]">
+              9. Miscellaneous
+            </h2>
+            
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851]">
+              9.1 Severability
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                If any provision of these Terms is deemed invalid, the remainder
+                shall continue in full force.
+              </p>
+              <p>
+                Invalid provisions will be replaced with the closest valid
+                alternative.
+              </p>
+            </div>
 
-          <p className="font-bold text-2xl">10. Miscellaneous</p>
-          <p className="font-semibold text-xl">10.1 Severability</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              If any provision of these Terms is deemed invalid, the remainder
-              shall continue in full force.
-            </li>
-            <li>
-              Invalid provisions will be replaced with the closest valid
-              alternative.
-            </li>
-          </ul>
+            <h3 className="font-['Nexa_Text'] text-lg sm:text-xl font-bold text-[#0F2851] pt-2">
+              9.2 Entire Agreement
+            </h3>
+            <div className="space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+              <p>
+                These Terms constitute the complete agreement between participants
+                and Elan &amp; nVision regarding Nexus QUEST.
+              </p>
+              <p>
+                No verbal agreements or representations outside these Terms are
+                binding.
+              </p>
+            </div>
+          </section>
 
-          <p className="font-semibold text-xl">10.2 Entire Agreement</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              These Terms constitute the complete agreement between participants
-              and Elan & nVision regarding Nexus QUEST.
-            </li>
-            <li>
-              No verbal agreements or representations outside these Terms are
-              binding.
-            </li>
-          </ul>
-
-          <p>
-            By participating in Nexus QUEST, you acknowledge that you have read,
-            understood, and agree to be bound by these Terms and Conditions.
-          </p>
-          <p>
-            For questions regarding these Terms, please contact:
-            elan.nvision@sa.iith.ac.in
-          </p>
-          <p>
-            Nexus QUEST is organized by Elan & nVision, the annual
-            techno-cultural fest of IIT Hyderabad.
-          </p>
-          <div className="h-10" />
+          {/* Concluding Note */}
+          <div className="pt-6 border-t border-[#0F2851]/15 space-y-3 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
+            <p>
+              By participating in Nexus QUEST, you acknowledge that you have read,
+              understood, and agree to be bound by these Terms and Conditions.
+            </p>
+            <p>
+              Nexus QUEST is organized by Elan &amp; nVision, the annual
+              techno-cultural fest of IIT Hyderabad.
+            </p>
+          </div>
         </motion.div>
       </div>
     </main>

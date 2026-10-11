@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, Variants } from "framer-motion";
-import SectionHeading from "../components/common/SectionHeading";
 import { ChevronDown } from "lucide-react";
 
 const fadeInUp: Variants = {
@@ -116,11 +116,11 @@ const faqSections: FaqSection[] = [
         id: "exam-4",
         question: "What is the marking scheme?",
         answer: (
-          <ul className="list-disc pl-6 space-y-1">
-            <li>+1 mark for every correct answer</li>
-            <li>−0.5 marks for every incorrect answer</li>
-            <li>0 marks for unattempted questions</li>
-          </ul>
+          <div className="space-y-1.5 font-medium">
+            <p><strong className="font-bold text-[#0F2851]">+1 mark</strong> for every correct answer</p>
+            <p><strong className="font-bold text-[#0F2851]">−0.5 marks</strong> for every incorrect answer</p>
+            <p><strong className="font-bold text-[#0F2851]">0 marks</strong> for unattempted questions</p>
+          </div>
         ),
       },
       {
@@ -333,28 +333,45 @@ export default function FaqsPage() {
   };
 
   return (
-    <div className="body-font bg-[var(--background)] text-[var(--foreground)] pt-16 w-full overflow-x-hidden">
-      <div className="space-y-20">
-        {/* Header */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          custom={0}
-          className="px-6 md:px-20"
-        >
-          <motion.div variants={fadeInUp} custom={1}>
-            <SectionHeading title="Frequently Asked Questions" />
-          </motion.div>
-        </motion.div>
+    <div className="relative min-h-screen w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851] font-['Nexa_Text']">
+      {/* ──────────────── 0. BACKGROUND PATTERN LAYER ──────────────── */}
+      <div
+        className="pointer-events-none absolute inset-0 z-0 opacity-100"
+        style={{
+          backgroundImage: "url('/pics/pattern.png')",
+          backgroundSize: "auto",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center",
+        }}
+      />
 
-        {/* FAQ Content */}
+      {/* ──────────────── 1. HERO BANNER ──────────────── */}
+      <header className="relative z-30 w-full shrink-0 overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/pics/exam-hero-bg.png"
+            alt="FAQs Hero Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
+          <h1 className="shrink-0 font-['Nexa_Text'] text-3xl font-black uppercase tracking-tight text-[#092B55] sm:text-4xl md:text-5xl">
+            FAQS
+          </h1>
+        </div>
+      </header>
+
+      {/* ──────────────── 2. CONTENT ──────────────── */}
+      <main className="relative z-10 mx-auto w-full max-w-[1000px] px-6 py-10 pb-24 md:px-12">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
-          custom={2}
-          className="px-6 md:px-20 max-w-[1000px] mx-auto leading-relaxed text-lg space-y-16"
+          custom={1}
+          className="space-y-14"
         >
           {faqSections.map((section, sectionIndex) => (
             <motion.div
@@ -362,14 +379,11 @@ export default function FaqsPage() {
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              custom={sectionIndex + 3}
+              custom={sectionIndex + 2}
             >
-              <p
-                className="font-bold text-2xl uppercase mb-6"
-                style={{ color: "#6E0216" }}
-              >
+              <h2 className="font-['Nexa_Text'] text-[24px] sm:text-[28px] md:text-[32px] font-black uppercase tracking-wide text-[#0F2851] mb-6">
                 {section.title}
-              </p>
+              </h2>
 
               <div className="flex flex-col">
                 {section.items.map((item) => {
@@ -377,21 +391,20 @@ export default function FaqsPage() {
                   return (
                     <div
                       key={item.id}
-                      className="border-b border-[var(--foreground)]/15"
+                      className="border-b border-[#0F2851]/15"
                     >
                       <button
                         onClick={() => toggle(item.id)}
-                        className="w-full flex justify-between items-center gap-4 text-left py-5 cursor-pointer"
+                        className="w-full flex justify-between items-center gap-4 text-left py-5 cursor-pointer font-['Nexa_Text'] font-bold text-lg sm:text-xl text-[#0F2851]"
                       >
-                        <span className="font-semibold text-xl">
+                        <span>
                           {item.question}
                         </span>
                         <ChevronDown
                           size={22}
-                          className={`shrink-0 transition-transform duration-300 ${
+                          className={`shrink-0 transition-transform duration-300 text-[#0F2851] ${
                             isOpen ? "rotate-180" : "rotate-0"
                           }`}
-                          style={{ color: "#6E0216" }}
                         />
                       </button>
 
@@ -402,7 +415,7 @@ export default function FaqsPage() {
                             : "max-h-0 opacity-0"
                         }`}
                       >
-                        <div className="pb-6 pr-6 text-base md:text-lg text-[var(--foreground)]/80">
+                        <div className="pb-6 pr-6 font-['Nexa_Text'] text-sm sm:text-base md:text-[17px] leading-relaxed text-[#111111]">
                           {item.answer}
                         </div>
                       </div>
@@ -413,14 +426,12 @@ export default function FaqsPage() {
             </motion.div>
           ))}
 
-          <p className="text-sm text-[var(--foreground)]/60">
+          <p className="text-sm text-[#0F2851]/70 font-medium">
             Note: All dates are provisional and subject to change. Please
             check the official website for the latest updates.
           </p>
-
-          <div className="h-10" />
         </motion.div>
-      </div>
+      </main>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const CONTACTS = [
   { name: "Ansika", number: "+91 97010 38745" },
   { name: "Manogna", number: "+91 91544 20779" },
@@ -9,65 +11,60 @@ const CONTACTS = [
 
 export default function ContactUs() {
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851]">
-
-      {/* =========================
-          PATTERN BACKGROUND
-          ========================= */}
+    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#F0ECCF] text-[#0F2851] font-['Nexa_Text']">
+      {/* ──────────────── 0. BACKGROUND PATTERN LAYER ──────────────── */}
       <div
-        className="absolute inset-0 z-0 pointer-events-none"
+        className="pointer-events-none absolute inset-0 z-0 opacity-100"
         style={{
-          backgroundImage: "url('/pics/patternfinal.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-          backgroundRepeat: "repeat-y",
+          backgroundImage: "url('/pics/pattern.png')",
+          backgroundSize: "auto",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center",
         }}
       />
 
-      {/* =========================
-          PAGE CONTENT
-          ========================= */}
+      {/* ──────────────── 1. HERO BANNER ──────────────── */}
+      <header className="relative z-30 w-full shrink-0 overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/pics/exam-hero-bg.png"
+            alt="Contact Us Hero Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:h-[100px] md:h-[160px] md:px-16">
+          <h1 className="shrink-0 font-['Nexa_Text'] text-3xl font-black uppercase tracking-tight text-[#092B55] sm:text-4xl md:text-5xl">
+            CONTACT US
+          </h1>
+        </div>
+      </header>
+
+      {/* ──────────────── 2. PAGE CONTENT ──────────────── */}
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 md:px-[6.5%] md:py-16">
-
-        {/* Heading */}
-        <h1
-          className="
-            mb-12
-            text-4xl
-            font-black
-            uppercase
-            tracking-wide
-            text-[#0F2851]
-            sm:text-5xl
-            md:mb-16
-            md:text-[52px]
-          "
-        >
-          CONTACT US
-        </h1>
-
         {/* =========================
             CONTACTS GRID
             ========================= */}
-        <div className="grid grid-cols-1 gap-x-16 gap-y-14 sm:grid-cols-2 md:gap-x-24 md:gap-y-20 lg:gap-x-32">
+        <div className="grid grid-cols-1 gap-x-16 gap-y-12 sm:grid-cols-2 md:gap-x-24 md:gap-y-16 lg:grid-cols-3">
           {CONTACTS.map((contact) => (
             <div
               key={contact.name}
               className="border-b border-[#0F2851]/15 pb-6"
             >
-              <p className="text-xl font-bold sm:text-2xl md:text-3xl">
+              <p className="font-['Nexa_Text'] text-xl font-bold sm:text-2xl md:text-3xl text-[#0F2851]">
                 {contact.name}
               </p>
               <a
                 href={`tel:${contact.number.replace(/\s/g, "")}`}
-                className="mt-3 block text-base font-medium sm:text-lg md:text-xl hover:opacity-70 transition-opacity"
+                className="mt-3 block font-['Nexa_Text'] text-base font-medium sm:text-lg md:text-xl text-[#111111] hover:text-[#0F2851] transition-colors"
               >
                 {contact.number}
               </a>
             </div>
           ))}
         </div>
-
       </div>
     </main>
   );

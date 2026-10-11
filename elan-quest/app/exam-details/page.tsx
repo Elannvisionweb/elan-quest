@@ -390,22 +390,15 @@ style={{
               ELIGIBILITY
             </h2>
 
-            <div className="mt-[28px] font-['Nexa_Text'] text-[32px] font-normal leading-none text-black">
-              <div className="flex items-start gap-[14px]">
-                <span>•</span>
-                <p>
-                  Students currently enrolled in Classes 6th to 12th from any
-                  recognized school are eligible to participate in Nexus QUEST.
-                </p>
-              </div>
-
-              <div className="mb-96 mt-[38px] flex items-start gap-[14px]">
-                <span>•</span>
-                <p>
-                  Students from all educational boards (CBSE, ICSE, State boards)
-                  within the specified grade range can apply for the examination.
-                </p>
-              </div>
+            <div className="mt-[28px] font-['Nexa_Text'] text-[32px] font-normal leading-relaxed text-[#0F2851] space-y-8 mb-96">
+              <p>
+                Students currently enrolled in Classes 6th to 12th from any
+                recognized school are eligible to participate in Nexus QUEST.
+              </p>
+              <p>
+                Students from all educational boards (CBSE, ICSE, State boards)
+                within the specified grade range can apply for the examination.
+              </p>
             </div>
           </section>
 
@@ -442,26 +435,20 @@ style={{
                 font-['Nexa_Text']
                 text-[14px]
                 font-normal
-                leading-[1.4]
-                text-black
+                leading-[1.5]
+                text-[#0F2851]
                 sm:text-[16px]
+                space-y-4
               "
             >
-              <div className="flex items-start gap-2">
-                <span>•</span>
-                <p>
-                  Students currently enrolled in Classes 6th to 12th from any
-                  recognized school are eligible to participate in Nexus QUEST.
-                </p>
-              </div>
-
-              <div className="mt-6 flex items-start gap-2">
-                <span>•</span>
-                <p>
-                  Students from all educational boards (CBSE, ICSE, State boards)
-                  within the specified grade range can apply for the examination.
-                </p>
-              </div>
+              <p>
+                Students currently enrolled in Classes 6th to 12th from any
+                recognized school are eligible to participate in Nexus QUEST.
+              </p>
+              <p>
+                Students from all educational boards (CBSE, ICSE, State boards)
+                within the specified grade range can apply for the examination.
+              </p>
             </div>
           </section>
         </div>
