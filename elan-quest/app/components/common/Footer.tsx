@@ -14,7 +14,7 @@ import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#A2C7FF] text-[#0F2851] py-8 px-6 font-sans">
+    <footer className="w-full bg-[#A2C7FF] text-[#0F2851] py-8 px-6 font-['Nexa_Text']">
       <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         
         {/* LOGOS SECTION */}

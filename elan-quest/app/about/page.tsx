@@ -18,7 +18,7 @@ const fadeInUp: Variants = {
 
 export default function AboutPage() {
   return (
-    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] font-sans text-[#0f2438]">
+    <div className="relative flex min-h-screen md:h-screen w-full flex-col md:overflow-hidden bg-[#F0ECCF] font-['Nexa_Text'] text-[#092B55]">
       {/* ──────────────── 0. BACKGROUND PATTERN LAYER ──────────────── */}
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-100"
