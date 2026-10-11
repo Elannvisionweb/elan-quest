@@ -24,30 +24,30 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
 
   return (
     <header className="w-full bg-[#B2D5FF] px-4 py-3 md:px-12 flex items-center justify-between shadow-sm relative z-50">
-      <div className="flex flex-shrink-0 items-center gap-2">
+      <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2">
         <Link href="/" className="flex flex-shrink-0 items-center gap-2">
           <Image
             src="/pics/navbar.png"
             alt="Elan and nVision logo"
             width={150}
             height={150}
-            className="h-auto w-[100px] object-contain md:w-[150px]"
+            className="h-auto w-[85px] sm:w-[100px] md:w-[150px] object-contain"
           />
         </Link>
 
-        <div className="hidden lg:flex items-center gap-4 pl-2 border-l border-[#0F2851]/20">
+        <div className="flex items-center gap-2 md:gap-4 pl-1.5 sm:pl-2 border-l border-[#0F2851]/20">
           <a
             href="https://www.iith.ac.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-opacity flex items-center"
           >
             <Image
               src="/pics/iith-logo.png"
               alt="IIT Hyderabad"
               width={90}
               height={30}
-              className="object-contain"
+              className="h-auto w-[55px] sm:w-[70px] md:w-[90px] object-contain"
             />
           </a>
         </div>
@@ -161,23 +161,6 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
           >
             REGISTER NOW
           </button>
-
-          <div className="flex items-center gap-4 pt-2">
-            <a
-              href="https://www.iith.ac.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-70 transition-opacity"
-            >
-              <Image
-                src="/pics/iith-logo.png"
-                alt="IIT Hyderabad"
-                width={80}
-                height={26}
-                className="object-contain"
-              />
-            </a>
-          </div>
         </div>
       )}
     </header>
