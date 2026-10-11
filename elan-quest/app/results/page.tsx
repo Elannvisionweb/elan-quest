@@ -297,7 +297,21 @@ export default function ResultsPage() {
 /> 
 
       {/* Hero Header Banner */}
-      <header className="relative z-20 w-full overflow-hidden shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]">
+      <section
+        className="
+          relative
+          z-20
+          w-full
+          h-[130px]
+          sm:h-[180px]
+          md:h-[515px]
+          overflow-hidden
+          px-5
+          sm:px-8
+          md:px-0
+          shadow-[0_12px_24px_-6px_rgba(0,0,0,0.12)]
+        "
+      >
         {/* USER FIGMA HERO BANNER BACKGROUND */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
@@ -309,25 +323,85 @@ export default function ResultsPage() {
           />
         </div>
 
-        <div className="relative z-10 w-full pt-8 pb-10 sm:pt-12 sm:pb-16 px-5 sm:px-6 md:px-16 flex items-center justify-between max-w-7xl mx-auto">
-          <div>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#0F2851] uppercase">
-              RESULTS
-            </h1>
-          </div>
+        {/* DESKTOP HEADING */}
+        <h1
+          className="
+            absolute
+            left-[146px]
+            top-[189px]
+            z-10
+            hidden
+            font-['Nexa_Text']
+            text-[91px]
+            font-black
+            uppercase
+            leading-none
+            text-[#092B55]
+            md:block
+          "
+        >
+          RESULTS
+        </h1>
 
-          {/* Trophy Illustration Graphic */}
-          <div className="relative w-28 h-28 sm:w-48 sm:h-48 md:w-56 md:h-56 flex-shrink-0">
+        {/* MOBILE HERO CONTAINER */}
+        <div className="relative z-10 flex h-full w-full items-center justify-between md:hidden">
+          <h1
+            className="
+              font-['Nexa_Text']
+              text-[28px]
+              font-black
+              uppercase
+              leading-tight
+              text-[#092B55]
+              sm:text-[40px]
+            "
+          >
+            RESULTS
+          </h1>
+
+          <div
+            className="
+              relative
+              h-[125px]
+              w-[130px]
+              flex-shrink-0
+              self-end
+              sm:h-[175px]
+              sm:w-[175px]
+            "
+          >
             <Image
-              src="/pics/prize.png" // Ensure this image path matches your public folder
-              alt="Trophy Celebration"
+              src="/pics/prize.png"
+              alt="Results Trophy"
               fill
-              className="object-contain"
               priority
+              className="object-contain object-bottom-right"
             />
           </div>
         </div>
-      </header>
+
+        {/* DESKTOP IMAGE */}
+        <div
+          className="
+            absolute
+            left-[887px]
+            bottom-0
+            z-10
+            hidden
+            h-[490px]
+            w-[470px]
+            md:block
+          "
+        >
+          <Image
+            src="/pics/prize.png"
+            alt="Results Trophy"
+            fill
+            priority
+            className="object-contain object-bottom-right"
+          />
+        </div>
+      </section>
 
       {/* Main Content Area */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-5 sm:px-6 pb-20 space-y-12 sm:space-y-16">
