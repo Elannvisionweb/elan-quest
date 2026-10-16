@@ -165,17 +165,6 @@ export default function RegisterPopUp({ setShowPopup }: PopUpProps = {}) {
             );
           })}
         </div>
-
-        {/* Modal Footer */}
-        <div className="relative z-10 mt-5 pt-3.5 border-t border-[#0F2851]/15 flex items-center justify-between text-[11px] sm:text-xs text-[#0F2851]/70 font-bold">
-          <span>IIT Hyderabad Olympiad</span>
-          <span className="inline-flex items-center gap-1">
-            Powered by{" "}
-            <span className="text-[#0F2851] font-black underline decoration-[#FF7A7A] decoration-2">
-              Unstop
-            </span>
-          </span>
-        </div>
       </div>
 
       <style jsx>{`
