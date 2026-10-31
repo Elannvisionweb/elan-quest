@@ -12,37 +12,37 @@ const CLASS_OPTIONS = [
   {
     grade: 6,
     code: "06",
-    link: "https://unstop.com/p/nexus-quest-elan-nvision-1736997",
+    link: "https://unstop.com/p/nexus-quest-class-vi-nexus-quest-iit-hyderabad-1763841",
   },
   {
     grade: 7,
     code: "07",
-    link: "https://unstop.com/p/nexus-quest-class-vii-nexus-quest-elan-nvision-1747304",
+    link: "https://unstop.com/p/nexus-quest-class-vii-nexus-quest-iit-hyderabad-1763839",
   },
   {
     grade: 8,
     code: "08",
-    link: "https://unstop.com/p/nexus-quest-class-viii-nexus-quest-elan-nvision-1747978",
+    link: "https://unstop.com/p/nexus-quest-class-viii-nexus-quest-iit-hyderabad-1763837",
   },
   {
     grade: 9,
     code: "09",
-    link: "https://unstop.com/p/nexus-quest-class-ix-nexus-quest-elan-nvision-1747986",
+    link: "https://unstop.com/p/nexus-quest-class-ix-nexus-quest-iit-hyderabad-1763836",
   },
   {
     grade: 10,
     code: "10",
-    link: "https://unstop.com/p/nexus-quest-class-x-nexus-quest-elan-nvision-1749250",
+    link: "https://unstop.com/p/nexus-quest-class-x-nexus-quest-iit-hyderabad-1762845",
   },
   {
     grade: 11,
     code: "11",
-    link: "https://unstop.com/p/nexus-quest-class-xi-nexus-quest-elan-nvision-1749257",
+    link: "https://unstop.com/p/nexus-quest-class-xi-nexus-quest-iit-hyderabad-1762844",
   },
   {
     grade: 12,
     code: "12",
-    link: "https://unstop.com/p/nexus-quest-class-xii-nexus-quest-elan-nvision-1749259",
+    link: "https://unstop.com/p/nexus-quest-class-xii-nexus-quest-iit-hyderabad-1762808",
   },
 ];
 
